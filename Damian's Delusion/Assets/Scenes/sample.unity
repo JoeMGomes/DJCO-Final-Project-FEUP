@@ -315,6 +315,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sensitivity: 100
+  m_Rigidbody: {fileID: 1580905092}
+  maxRotationY: 180
+  minRotationY: -180
 --- !u!1 &1489334544
 GameObject:
   m_ObjectHideFlags: 0
