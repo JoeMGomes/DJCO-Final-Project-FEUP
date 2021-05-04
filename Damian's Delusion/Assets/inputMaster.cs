@@ -33,6 +33,14 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""264b98f4-3741-4bce-b7bf-f01556345309"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -101,16 +109,45 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""action"": ""mouseLook"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a2f02025-3b35-4f15-b6e8-4a1f56bb5eb1"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
     ],
-    ""controlSchemes"": []
+    ""controlSchemes"": [
+        {
+            ""name"": ""KeyboardMouse"",
+            ""bindingGroup"": ""KeyboardMouse"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<Mouse>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        }
+    ]
 }");
         // player
         m_player = asset.FindActionMap("player", throwIfNotFound: true);
         m_player_movement = m_player.FindAction("movement", throwIfNotFound: true);
         m_player_mouseLook = m_player.FindAction("mouseLook", throwIfNotFound: true);
+        m_player_interact = m_player.FindAction("interact", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -162,12 +199,14 @@ public class @InputMaster : IInputActionCollection, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_player_movement;
     private readonly InputAction m_player_mouseLook;
+    private readonly InputAction m_player_interact;
     public struct PlayerActions
     {
         private @InputMaster m_Wrapper;
         public PlayerActions(@InputMaster wrapper) { m_Wrapper = wrapper; }
         public InputAction @movement => m_Wrapper.m_player_movement;
         public InputAction @mouseLook => m_Wrapper.m_player_mouseLook;
+        public InputAction @interact => m_Wrapper.m_player_interact;
         public InputActionMap Get() { return m_Wrapper.m_player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -183,6 +222,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @mouseLook.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseLook;
                 @mouseLook.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseLook;
                 @mouseLook.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseLook;
+                @interact.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
+                @interact.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
+                @interact.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -193,13 +235,26 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @mouseLook.started += instance.OnMouseLook;
                 @mouseLook.performed += instance.OnMouseLook;
                 @mouseLook.canceled += instance.OnMouseLook;
+                @interact.started += instance.OnInteract;
+                @interact.performed += instance.OnInteract;
+                @interact.canceled += instance.OnInteract;
             }
         }
     }
     public PlayerActions @player => new PlayerActions(this);
+    private int m_KeyboardMouseSchemeIndex = -1;
+    public InputControlScheme KeyboardMouseScheme
+    {
+        get
+        {
+            if (m_KeyboardMouseSchemeIndex == -1) m_KeyboardMouseSchemeIndex = asset.FindControlSchemeIndex("KeyboardMouse");
+            return asset.controlSchemes[m_KeyboardMouseSchemeIndex];
+        }
+    }
     public interface IPlayerActions
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnMouseLook(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
 }

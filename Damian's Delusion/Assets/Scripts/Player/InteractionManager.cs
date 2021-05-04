@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+
 
 public class InteractionManager : MonoBehaviour
 {
@@ -41,12 +43,20 @@ public class InteractionManager : MonoBehaviour
             else RemoveFocus();
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && focus != null)
+        //if (Input.GetKeyDown(KeyCode.E) && focus != null)
+        //{
+        //   
+        //}
+    }
+
+
+    void OnInteract(InputValue value)
+    {
+        if(focus != null)
         {
             focus.Interact();
         }
     }
-
 
     void SetFocus(Interactable newFocus)
     {
