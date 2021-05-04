@@ -6,11 +6,11 @@ public class cameraLook : MonoBehaviour
 {
 
     public float sensitivity = 100f;
-    public Rigidbody m_Rigidbody;
-    public float maxRotationY = 180;
-    public float minRotationY = -180;
+    public float maxRotationY = 90f;
+    public float minRotationY = -90f;
     private float rotationY;
     private float rotationX;
+    public Transform playerBody;
     public InputMaster controls;
 
     void Awake()
@@ -21,14 +21,13 @@ public class cameraLook : MonoBehaviour
 
     void rotate(Vector2 rotation)
     {   
-        rotationY -= rotation.y * Time.deltaTime;
-        rotationX += rotation.x * Time.deltaTime;
+        rotationY -= rotation.y * sensitivity * Time.deltaTime;
+        rotationX = rotation.x * sensitivity * Time.deltaTime;
         //rotate the camera
-        //rotationY = Mathf.Clamp(rotationY, minRotationY, maxRotationY);
+        rotationY = Mathf.Clamp(rotationY, minRotationY, maxRotationY);
         transform.localRotation = Quaternion.Euler(rotationY, 0f, 0f);
         //rotate the object
-        m_Rigidbody.rotation = Quaternion.Euler(0f, rotationX, 0f);
-        
+        playerBody.Rotate(Vector3.up * rotationX);
     }
 
     void Start()
@@ -44,17 +43,4 @@ public class cameraLook : MonoBehaviour
     {
         controls.Disable();
     }
-
-    // Update is called once per frame
-    /*void Update()
-    {
-        float mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime;
-        float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
-
-        rotationY -= mouseY;
-        rotationY = Mathf.Clamp(rotationY, -180f, 180f);
-
-        transform.localRotation = Quaternion.Euler(rotationY, 0f, 0f);
-        transform.parent.Rotate(Vector3.up * mouseX);
-    }*/
 }

@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class playerMovement : MonoBehaviour
 {
-    private Rigidbody m_Rigidbody;
     public float m_Speed = 10.0f;
+    public CharacterController controller;
     public InputMaster controls;
     private Vector2 direction;
 
@@ -17,12 +17,13 @@ public class playerMovement : MonoBehaviour
     void Update()
     {
         direction = controls.player.movement.ReadValue<Vector2>();
-        m_Rigidbody.velocity = new Vector3(direction.x, 0, direction.y) * m_Speed;
+        Vector3 move = new Vector3(direction.x, 0, direction.y) * m_Speed * Time.deltaTime;
+        move = this.transform.TransformDirection(move);
+        controller.Move(move);
     }
 
     void Start()
     {
-        m_Rigidbody = GetComponent<Rigidbody>();
     }
 
     private void OnEnable()
