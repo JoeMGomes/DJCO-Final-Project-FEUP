@@ -28,9 +28,17 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""mouseLook"",
-                    ""type"": ""Value"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""a3609e09-53fa-49cd-854c-de915f78beef"",
                     ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""mouseLookY"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""0d4133cc-0da1-49ec-bf44-04ab595d226b"",
+                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
@@ -147,6 +155,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
         m_player = asset.FindActionMap("player", throwIfNotFound: true);
         m_player_movement = m_player.FindAction("movement", throwIfNotFound: true);
         m_player_mouseLook = m_player.FindAction("mouseLook", throwIfNotFound: true);
+        m_player_mouseLookY = m_player.FindAction("mouseLookY", throwIfNotFound: true);
         m_player_interact = m_player.FindAction("interact", throwIfNotFound: true);
     }
 
@@ -199,6 +208,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_player_movement;
     private readonly InputAction m_player_mouseLook;
+    private readonly InputAction m_player_mouseLookY;
     private readonly InputAction m_player_interact;
     public struct PlayerActions
     {
@@ -206,6 +216,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
         public PlayerActions(@InputMaster wrapper) { m_Wrapper = wrapper; }
         public InputAction @movement => m_Wrapper.m_player_movement;
         public InputAction @mouseLook => m_Wrapper.m_player_mouseLook;
+        public InputAction @mouseLookY => m_Wrapper.m_player_mouseLookY;
         public InputAction @interact => m_Wrapper.m_player_interact;
         public InputActionMap Get() { return m_Wrapper.m_player; }
         public void Enable() { Get().Enable(); }
@@ -222,6 +233,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @mouseLook.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseLook;
                 @mouseLook.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseLook;
                 @mouseLook.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseLook;
+                @mouseLookY.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseLookY;
+                @mouseLookY.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseLookY;
+                @mouseLookY.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseLookY;
                 @interact.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
                 @interact.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
                 @interact.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
@@ -235,6 +249,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @mouseLook.started += instance.OnMouseLook;
                 @mouseLook.performed += instance.OnMouseLook;
                 @mouseLook.canceled += instance.OnMouseLook;
+                @mouseLookY.started += instance.OnMouseLookY;
+                @mouseLookY.performed += instance.OnMouseLookY;
+                @mouseLookY.canceled += instance.OnMouseLookY;
                 @interact.started += instance.OnInteract;
                 @interact.performed += instance.OnInteract;
                 @interact.canceled += instance.OnInteract;
@@ -255,6 +272,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnMouseLook(InputAction.CallbackContext context);
+        void OnMouseLookY(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
     }
 }

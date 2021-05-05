@@ -15,9 +15,17 @@
                 },
                 {
                     "name": "mouseLook",
-                    "type": "Value",
+                    "type": "PassThrough",
                     "id": "a3609e09-53fa-49cd-854c-de915f78beef",
                     "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "mouseLookY",
+                    "type": "PassThrough",
+                    "id": "0d4133cc-0da1-49ec-bf44-04ab595d226b",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": ""
                 },
