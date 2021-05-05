@@ -27,17 +27,17 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""mouseLook"",
+                    ""name"": ""mouseLookX"",
                     ""type"": ""PassThrough"",
                     ""id"": ""a3609e09-53fa-49cd-854c-de915f78beef"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
                 {
                     ""name"": ""mouseLookY"",
                     ""type"": ""PassThrough"",
-                    ""id"": ""0d4133cc-0da1-49ec-bf44-04ab595d226b"",
+                    ""id"": ""711cab65-a678-4895-844b-a10a1ca6ac39"",
                     ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -110,11 +110,11 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""73043a62-585b-4cbb-9749-e2269efae61a"",
-                    ""path"": ""<Mouse>/delta"",
+                    ""path"": ""<Mouse>/delta/x"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""mouseLook"",
+                    ""action"": ""mouseLookX"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -126,6 +126,17 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cea430c8-7ea7-4ec2-a6b7-02eadeda1cf6"",
+                    ""path"": ""<Mouse>/delta/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""mouseLookY"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -154,7 +165,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
         // player
         m_player = asset.FindActionMap("player", throwIfNotFound: true);
         m_player_movement = m_player.FindAction("movement", throwIfNotFound: true);
-        m_player_mouseLook = m_player.FindAction("mouseLook", throwIfNotFound: true);
+        m_player_mouseLookX = m_player.FindAction("mouseLookX", throwIfNotFound: true);
         m_player_mouseLookY = m_player.FindAction("mouseLookY", throwIfNotFound: true);
         m_player_interact = m_player.FindAction("interact", throwIfNotFound: true);
     }
@@ -207,7 +218,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
     private readonly InputActionMap m_player;
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_player_movement;
-    private readonly InputAction m_player_mouseLook;
+    private readonly InputAction m_player_mouseLookX;
     private readonly InputAction m_player_mouseLookY;
     private readonly InputAction m_player_interact;
     public struct PlayerActions
@@ -215,7 +226,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
         private @InputMaster m_Wrapper;
         public PlayerActions(@InputMaster wrapper) { m_Wrapper = wrapper; }
         public InputAction @movement => m_Wrapper.m_player_movement;
-        public InputAction @mouseLook => m_Wrapper.m_player_mouseLook;
+        public InputAction @mouseLookX => m_Wrapper.m_player_mouseLookX;
         public InputAction @mouseLookY => m_Wrapper.m_player_mouseLookY;
         public InputAction @interact => m_Wrapper.m_player_interact;
         public InputActionMap Get() { return m_Wrapper.m_player; }
@@ -230,9 +241,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @movement.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
                 @movement.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
                 @movement.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
-                @mouseLook.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseLook;
-                @mouseLook.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseLook;
-                @mouseLook.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseLook;
+                @mouseLookX.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseLookX;
+                @mouseLookX.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseLookX;
+                @mouseLookX.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseLookX;
                 @mouseLookY.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseLookY;
                 @mouseLookY.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseLookY;
                 @mouseLookY.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseLookY;
@@ -246,9 +257,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @movement.started += instance.OnMovement;
                 @movement.performed += instance.OnMovement;
                 @movement.canceled += instance.OnMovement;
-                @mouseLook.started += instance.OnMouseLook;
-                @mouseLook.performed += instance.OnMouseLook;
-                @mouseLook.canceled += instance.OnMouseLook;
+                @mouseLookX.started += instance.OnMouseLookX;
+                @mouseLookX.performed += instance.OnMouseLookX;
+                @mouseLookX.canceled += instance.OnMouseLookX;
                 @mouseLookY.started += instance.OnMouseLookY;
                 @mouseLookY.performed += instance.OnMouseLookY;
                 @mouseLookY.canceled += instance.OnMouseLookY;
@@ -271,7 +282,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
     public interface IPlayerActions
     {
         void OnMovement(InputAction.CallbackContext context);
-        void OnMouseLook(InputAction.CallbackContext context);
+        void OnMouseLookX(InputAction.CallbackContext context);
         void OnMouseLookY(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
     }

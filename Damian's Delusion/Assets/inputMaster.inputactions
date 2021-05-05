@@ -14,17 +14,17 @@
                     "interactions": ""
                 },
                 {
-                    "name": "mouseLook",
+                    "name": "mouseLookX",
                     "type": "PassThrough",
                     "id": "a3609e09-53fa-49cd-854c-de915f78beef",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": ""
                 },
                 {
                     "name": "mouseLookY",
                     "type": "PassThrough",
-                    "id": "0d4133cc-0da1-49ec-bf44-04ab595d226b",
+                    "id": "711cab65-a678-4895-844b-a10a1ca6ac39",
                     "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": ""
@@ -97,11 +97,11 @@
                 {
                     "name": "",
                     "id": "73043a62-585b-4cbb-9749-e2269efae61a",
-                    "path": "<Mouse>/delta",
+                    "path": "<Mouse>/delta/x",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "mouseLook",
+                    "action": "mouseLookX",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -113,6 +113,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cea430c8-7ea7-4ec2-a6b7-02eadeda1cf6",
+                    "path": "<Mouse>/delta/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "mouseLookY",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
