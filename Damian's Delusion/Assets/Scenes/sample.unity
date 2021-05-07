@@ -641,9 +641,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fff27148ba06cb4ca0d33ab0b5dfc57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 1500
-  Snappiness: 50
   player: {fileID: 2002816205}
+  sensitivityX: 5
+  sensitivityY: 5
+  minimumX: -360
+  maximumX: 360
+  minimumY: -90
+  maximumY: 90
+  frameCounter: 20
 --- !u!1 &1326299394
 GameObject:
   m_ObjectHideFlags: 0
