@@ -4,79 +4,142 @@ using UnityEngine;
 
 public class cameraLook : MonoBehaviour
 {
+    public enum RotationAxes { MouseXAndY = 0, MouseX = 1, MouseY = 2 }
+    public RotationAxes axes = RotationAxes.MouseXAndY;
+    public Transform player;
+    public float sensitivityX = 15F;
+    public float sensitivityY = 15F;
 
-    public float sensitivity = 1000f;
-    public float acceleration = 1000f;
-    public float inputLagPeriod = 0.004f;
-    public float maxRotationY = 90f;
-    public float minRotationY = -90f;
-    private Vector2 velocity; // The current rotation velocity, in degrees
-    private Vector2 rotation; // The current rotation, in degrees
-    private Vector2 lastInputEvent; // The last received non-zero input value
-    private float inputLagTimer; // The time since the last received non-zero input value
-    public Transform playerBody;
-    public InputMaster controls;
+    public float minimumX = -360F;
+    public float maximumX = 360F;
 
+    public float minimumY = -60F;
+    public float maximumY = 60F;
 
-    void Awake()
+    float rotationX = 0F;
+    float rotationY = 0F;
+
+    private List<float> rotArrayX = new List<float>();
+    float rotAverageX = 0F;
+
+    private List<float> rotArrayY = new List<float>();
+    float rotAverageY = 0F;
+
+    public float frameCounter = 20;
+
+    Quaternion originalRotation;
+    Quaternion originalRotationPlayer;
+    void Update()
     {
-        controls = new InputMaster();
-    }
-
-    private Vector2 GetInput()
-    {
-        // Add to the lag timer
-        inputLagTimer += Time.deltaTime;
-        // Get the input vector. This can be changed to work with the new input system or even touch controls
-        Vector2 input = new Vector2(
-            controls.player.mouseLookX.ReadValue<float>(),
-            -controls.player.mouseLookY.ReadValue<float>()
-        );
-
-        // Sometimes at fast framerates, Unity will not receive input events every frame, which results
-        // in zero values being given above. This can cause stuttering and make it difficult to fine
-        // tune the acceleration setting. To fix this, disregard zero values. If the lag timer has passed the
-        // lag period, we can assume that the user is not giving any input, so we actually want to set
-        // the input value to zero at that time.
-        // Thus, save the input value if it is non-zero or the lag timer is met
-        if ((Mathf.Approximately(0, input.x) && Mathf.Approximately(0, input.y)) == false || inputLagTimer >= inputLagPeriod)
+        if (axes == RotationAxes.MouseXAndY)
         {
-            lastInputEvent = input;
-            inputLagTimer = 0;
+            rotAverageY = 0f;
+            rotAverageX = 0f;
+
+            rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
+            rotationX += Input.GetAxis("Mouse X") * sensitivityX;
+
+            rotArrayY.Add(rotationY);
+            rotArrayX.Add(rotationX);
+
+            if (rotArrayY.Count >= frameCounter)
+            {
+                rotArrayY.RemoveAt(0);
+            }
+            if (rotArrayX.Count >= frameCounter)
+            {
+                rotArrayX.RemoveAt(0);
+            }
+
+            for (int j = 0; j < rotArrayY.Count; j++)
+            {
+                rotAverageY += rotArrayY[j];
+            }
+            for (int i = 0; i < rotArrayX.Count; i++)
+            {
+                rotAverageX += rotArrayX[i];
+            }
+
+            rotAverageY /= rotArrayY.Count;
+            rotAverageX /= rotArrayX.Count;
+
+            rotAverageY = ClampAngle(rotAverageY, minimumY, maximumY);
+            rotAverageX = ClampAngle(rotAverageX, minimumX, maximumX);
+
+            Quaternion yQuaternion = Quaternion.AngleAxis(rotAverageY, Vector3.left);
+            Quaternion xQuaternion = Quaternion.AngleAxis(rotAverageX, Vector3.up);
+
+            transform.localRotation = originalRotation * yQuaternion;
+            player.localRotation = originalRotationPlayer * xQuaternion;
         }
-        return lastInputEvent;
+        else if (axes == RotationAxes.MouseX)
+        {
+            rotAverageX = 0f;
+
+            rotationX += Input.GetAxis("Mouse X") * sensitivityX;
+
+            rotArrayX.Add(rotationX);
+
+            if (rotArrayX.Count >= frameCounter)
+            {
+                rotArrayX.RemoveAt(0);
+            }
+            for (int i = 0; i < rotArrayX.Count; i++)
+            {
+                rotAverageX += rotArrayX[i];
+            }
+            rotAverageX /= rotArrayX.Count;
+
+            rotAverageX = ClampAngle(rotAverageX, minimumX, maximumX);
+
+            Quaternion xQuaternion = Quaternion.AngleAxis(rotAverageX, Vector3.up);
+            transform.localRotation = originalRotation * xQuaternion;
+        }
+        else
+        {
+            rotAverageY = 0f;
+
+            rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
+
+            rotArrayY.Add(rotationY);
+
+            if (rotArrayY.Count >= frameCounter)
+            {
+                rotArrayY.RemoveAt(0);
+            }
+            for (int j = 0; j < rotArrayY.Count; j++)
+            {
+                rotAverageY += rotArrayY[j];
+            }
+            rotAverageY /= rotArrayY.Count;
+
+            rotAverageY = ClampAngle(rotAverageY, minimumY, maximumY);
+
+            Quaternion yQuaternion = Quaternion.AngleAxis(rotAverageY, Vector3.left);
+            transform.localRotation = originalRotation * yQuaternion;
+        }
     }
-    private void Update()
-    {
-        // The wanted velocity is the current input scaled by the sensitivity
-        // This is also the maximum velocity
-        Vector2 wantedVelocity = GetInput() * sensitivity;
-
-        // Calculate new rotation
-        velocity = new Vector2(
-            Mathf.MoveTowards(velocity.x, wantedVelocity.x, acceleration * Time.deltaTime),
-            Mathf.MoveTowards(velocity.y, wantedVelocity.y, acceleration * Time.deltaTime));
-        rotation += velocity * Time.deltaTime;
-
-        // Convert the rotation to euler angles
-        rotation.y = Mathf.Clamp(rotation.y, minRotationY, maxRotationY);
-        transform.localEulerAngles = new Vector3(rotation.y, 0f, 0f);
-        playerBody.transform.localEulerAngles = new Vector3(0f, rotation.x, 0f);
-    }
-
-
 
     void Start()
     {
-        //Cursor.lockState = CursorLockMode.Locked;
-    }
-    private void OnEnable()
-    {
-        controls.Enable();
+        originalRotation = transform.localRotation;
+        originalRotationPlayer = player.localRotation;
     }
 
-    private void OnDisable()
+    public static float ClampAngle(float angle, float min, float max)
     {
-        controls.Disable();
+        angle = angle % 360;
+        if ((angle >= -360F) && (angle <= 360F))
+        {
+            if (angle < -360F)
+            {
+                angle += 360F;
+            }
+            if (angle > 360F)
+            {
+                angle -= 360F;
+            }
+        }
+        return Mathf.Clamp(angle, min, max);
     }
 }
