@@ -22,7 +22,6 @@ public class InteractionManager : MonoBehaviour
     {
         Ray ray = cam.ScreenPointToRay(new Vector2(Screen.width/2,Screen.height/2));
         RaycastHit hit;
-
         if (Physics.Raycast(ray, out hit))
         {
 
@@ -43,10 +42,6 @@ public class InteractionManager : MonoBehaviour
             else RemoveFocus();
         }
 
-        //if (Input.GetKeyDown(KeyCode.E) && focus != null)
-        //{
-        //   
-        //}
     }
 
 
