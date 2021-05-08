@@ -5,8 +5,6 @@ using UnityEngine;
 public class Mock_Interaction : Interactable
 {
 
-
-
     override public void Interact()
     {
         base.Interact();
