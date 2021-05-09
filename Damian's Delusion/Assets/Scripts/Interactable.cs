@@ -6,7 +6,7 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
 
-    public bool isInteracting = false;
+    protected bool isInteracting = false;
 
     public GameObject HUDText_prefab;
     protected GameObject HUDText_gameobject = null;
