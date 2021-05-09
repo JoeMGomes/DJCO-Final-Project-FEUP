@@ -11,6 +11,6 @@ public class Item : ScriptableObject
 
 
     public virtual void use(){
-        Debug.Log(ItemMame);
+        Debug.Log(ItemMame); //default action
     }
 }
