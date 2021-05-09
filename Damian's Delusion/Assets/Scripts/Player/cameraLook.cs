@@ -5,42 +5,92 @@ using UnityEngine;
 public class cameraLook : MonoBehaviour
 {
 
-    public float sensitivity = 100f;
-    public float maxRotationY = 90f;
-    public float minRotationY = -90f;
-    private float rotationY;
-    private float rotationX;
-    public Transform playerBody;
-    public InputMaster controls;
+    public Transform player;
+    public float sensitivityX = 15F;
+    public float sensitivityY = 15F;
 
-    void Awake()
+    public float minimumX = -360F;
+    public float maximumX = 360F;
+
+    public float minimumY = -60F;
+    public float maximumY = 60F;
+
+    float rotationX = 0F;
+    float rotationY = 0F;
+
+    private List<float> rotArrayX = new List<float>();
+    float rotAverageX = 0F;
+
+    private List<float> rotArrayY = new List<float>();
+    float rotAverageY = 0F;
+
+    public float frameCounter = 20;
+
+    Quaternion originalRotation;
+    Quaternion originalRotationPlayer;
+    void Update()
     {
-        controls = new InputMaster();
-        controls.player.mouseLook.performed += ctx => rotate(ctx.ReadValue<Vector2>());
-    }
+        rotAverageY = 0f;
+        rotAverageX = 0f;
 
-    void rotate(Vector2 rotation)
-    {   
-        rotationY -= rotation.y * sensitivity * Time.deltaTime;
-        rotationX = rotation.x * sensitivity * Time.deltaTime;
-        //rotate the camera
-        rotationY = Mathf.Clamp(rotationY, minRotationY, maxRotationY);
-        transform.localRotation = Quaternion.Euler(rotationY, 0f, 0f);
-        //rotate the object
-        playerBody.Rotate(Vector3.up * rotationX);
+        rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
+        rotationX += Input.GetAxis("Mouse X") * sensitivityX;
+
+        rotArrayY.Add(rotationY);
+        rotArrayX.Add(rotationX);
+
+        if (rotArrayY.Count >= frameCounter)
+        {
+            rotArrayY.RemoveAt(0);
+        }
+        if (rotArrayX.Count >= frameCounter)
+        {
+            rotArrayX.RemoveAt(0);
+        }
+
+        for (int j = 0; j < rotArrayY.Count; j++)
+        {
+            rotAverageY += rotArrayY[j];
+        }
+        for (int i = 0; i < rotArrayX.Count; i++)
+        {
+            rotAverageX += rotArrayX[i];
+        }
+
+        rotAverageY /= rotArrayY.Count;
+        rotAverageX /= rotArrayX.Count;
+
+        rotAverageY = ClampAngle(rotAverageY, minimumY, maximumY);
+        rotAverageX = ClampAngle(rotAverageX, minimumX, maximumX);
+
+        Quaternion yQuaternion = Quaternion.AngleAxis(rotAverageY, Vector3.left);
+        Quaternion xQuaternion = Quaternion.AngleAxis(rotAverageX, Vector3.up);
+
+        transform.localRotation = originalRotation * yQuaternion;
+        player.localRotation = originalRotationPlayer * xQuaternion;
+
     }
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-    }
-    private void OnEnable()
-    {
-        controls.Enable();
+        originalRotation = transform.localRotation;
+        originalRotationPlayer = player.localRotation;
     }
 
-    private void OnDisable()
+    public static float ClampAngle(float angle, float min, float max)
     {
-        controls.Disable();
+        angle = angle % 360;
+        if ((angle >= -360F) && (angle <= 360F))
+        {
+            if (angle < -360F)
+            {
+                angle += 360F;
+            }
+            if (angle > 360F)
+            {
+                angle -= 360F;
+            }
+        }
+        return Mathf.Clamp(angle, min, max);
     }
 }
