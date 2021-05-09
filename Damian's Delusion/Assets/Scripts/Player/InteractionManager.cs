@@ -42,10 +42,15 @@ public class InteractionManager : MonoBehaviour
             else RemoveFocus();
         }
 
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            OnInteract();
+        }
+
     }
 
 
-    void OnInteract(InputValue value)
+    void OnInteract()
     {
         if(focus != null)
         {

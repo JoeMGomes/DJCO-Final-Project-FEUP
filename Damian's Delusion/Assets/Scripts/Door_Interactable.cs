@@ -9,6 +9,9 @@ public class Door_Interactable : Interactable
     public bool isOpen = false;
     private Animator anim;
 
+    private string openString = "Press 'E' to open";
+    private string closeString = "Press 'E' to close";
+
     private void Awake()
     {
         anim = gameObject.GetComponent<Animator>();
@@ -33,14 +36,14 @@ public class Door_Interactable : Interactable
 
         anim.SetBool("isOpen", true);
         isOpen = true;
-        HUDText_gameobject.GetComponent<HUD_Interactable>().setText("Press 'E' to close");
+        HUDText_gameobject.GetComponent<HUD_Interactable>().setText(closeString);
     }
 
     private void closeDoor()
     {
         anim.SetBool("isOpen", false);
         isOpen = false;
-        HUDText_gameobject.GetComponent<HUD_Interactable>().setText("Press 'E' to open");
+        HUDText_gameobject.GetComponent<HUD_Interactable>().setText(openString);
     }
 
     override public void OnFocus()
@@ -48,7 +51,10 @@ public class Door_Interactable : Interactable
         if (HUDText_gameobject == null)
         {
             HUDText_gameobject = Instantiate(HUDText_prefab, GameObject.FindGameObjectWithTag("Canvas").transform);
-            HUDText_gameobject.GetComponent<HUD_Interactable>().setText("Press 'E' to open");
+            if(isOpen)
+                HUDText_gameobject.GetComponent<HUD_Interactable>().setText(closeString);
+            else
+                HUDText_gameobject.GetComponent<HUD_Interactable>().setText(openString);
         }
     }
     override public void OnDefocus()
