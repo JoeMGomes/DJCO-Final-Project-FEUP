@@ -73,6 +73,8 @@ public class cameraLook : MonoBehaviour
 
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         originalRotation = transform.localRotation;
         originalRotationPlayer = player.localRotation;
     }
