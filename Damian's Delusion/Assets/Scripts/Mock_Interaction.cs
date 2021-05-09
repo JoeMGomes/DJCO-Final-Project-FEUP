@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class Mock_Interaction : Interactable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 
     override public void Interact()
     {
-        Debug.Log("INTERAGIU JOVEM COM HERANÇA");
+        base.Interact();
+    }
+
+    override public void OnFocus()
+    {
+        if (HUDText_gameobject == null)
+        {
+            HUDText_gameobject = Instantiate(HUDText_prefab, GameObject.FindGameObjectWithTag("Canvas").transform);
+            HUDText_gameobject.GetComponent<HUD_Interactable>().setText("Press 'E' to interact with mock");
+        }
+    }
+    override public void OnDefocus()
+    {
+        base.OnDefocus();
     }
 }

@@ -8,32 +8,29 @@ public class Interactable : MonoBehaviour
 
     public bool isInteracting = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject HUDText_prefab;
+    protected GameObject HUDText_gameobject = null;
 
     public virtual void Interact()
     {
-        Debug.Log("INTERACTED WITH: " + gameObject.name);
         isInteracting = true;
     }
 
-    public void OnDefocus()
+    public virtual void OnDefocus()
     {
-        Debug.Log("DEFOCUSED: " + gameObject.name);
         isInteracting = false;
+        if (HUDText_gameobject != null)
+        {
+            Destroy(HUDText_gameobject);
+        }
     }
 
-    internal void OnFocus()
+    public virtual void OnFocus()
     {
-        Debug.Log("FOCUDED: " + gameObject.name);
+        if (HUDText_gameobject == null)
+        {
+            HUDText_gameobject = Instantiate(HUDText_prefab, GameObject.FindGameObjectWithTag("Canvas").transform);
+            HUDText_gameobject.GetComponent<HUD_Interactable>().setText("Press 'E' to interact");
+        }
     }
 }
