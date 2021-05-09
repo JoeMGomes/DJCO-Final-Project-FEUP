@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SlotController : MonoBehaviour
 {
     public Item item;
-
+    public Color activeColor;
     public void Remove()
     {
         if (item)
@@ -21,7 +21,7 @@ public class SlotController : MonoBehaviour
         Image sprite = transform.Find("Image").GetComponent<Image>();
         if (item)
         {
-            displayText.text = item.ItemMame;
+            displayText.text = item.ItemName;
             sprite.sprite = item.icon;
             sprite.color = Color.white;
         }
@@ -36,9 +36,9 @@ public class SlotController : MonoBehaviour
     public void setActive()
     {
         ColorBlock buttonColors = transform.GetComponent<Button>().colors;
-        buttonColors.normalColor = Color.blue;
+        buttonColors.normalColor = activeColor;
         transform.GetComponent<Button>().colors = buttonColors;
-        Debug.Log(transform.Find("Text").GetComponent<Text>().text);
+
     }
 
     public void setInactive()
