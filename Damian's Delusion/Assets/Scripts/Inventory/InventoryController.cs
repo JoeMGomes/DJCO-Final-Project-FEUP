@@ -10,7 +10,7 @@ public class InventoryController : MonoBehaviour
     public GameObject InventoryPanel;
     public static InventoryController instance;
     private int active = 0;
-    public Item ActiveItem; 
+    public Item ActiveItem;
 
     void updateSlots()
     {
@@ -27,11 +27,13 @@ public class InventoryController : MonoBehaviour
             {
                 slot.item = null;
             }
-            if(index == active){
+            if (index == active)
+            {
                 slot.setActive();
                 ActiveItem = slot.item;
             }
-            else{
+            else
+            {
                 slot.setInactive();
             }
 
@@ -83,31 +85,56 @@ public class InventoryController : MonoBehaviour
         {
             active = 0;
             updateSlots();
+            if (ActiveItem)
+                Player.GetComponent<HandController>().UpdateItemModel(ActiveItem.model);
+            else
+                Player.GetComponent<HandController>().UpdateItemModel(null);
+
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             active = 1;
             updateSlots();
+            if (ActiveItem)
+                Player.GetComponent<HandController>().UpdateItemModel(ActiveItem.model);
+            else
+                Player.GetComponent<HandController>().UpdateItemModel(null);
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             active = 2;
             updateSlots();
+            if (ActiveItem)
+                Player.GetComponent<HandController>().UpdateItemModel(ActiveItem.model);
+            else
+                Player.GetComponent<HandController>().UpdateItemModel(null);
         }
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             active = 3;
             updateSlots();
+            if (ActiveItem)
+                Player.GetComponent<HandController>().UpdateItemModel(ActiveItem.model);
+            else
+                Player.GetComponent<HandController>().UpdateItemModel(null);
         }
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             active = 4;
             updateSlots();
+            if (ActiveItem)
+                Player.GetComponent<HandController>().UpdateItemModel(ActiveItem.model);
+            else
+                Player.GetComponent<HandController>().UpdateItemModel(null);
         }
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
             active = 5;
             updateSlots();
+            if (ActiveItem)
+                Player.GetComponent<HandController>().UpdateItemModel(ActiveItem.model);
+            else
+                Player.GetComponent<HandController>().UpdateItemModel(null);
         }
     }
 }
