@@ -12,6 +12,9 @@ public class Door_Interactable : Interactable
     private string openString = "Press 'E' to open";
     private string closeString = "Press 'E' to close";
 
+    public Key unlock_Key;
+    public bool isLocked = false;
+
     private void Awake()
     {
         anim = gameObject.GetComponent<Animator>();
@@ -21,10 +24,33 @@ public class Door_Interactable : Interactable
     {
         base.Interact();
 
-        if (isOpen )
+        if (!isLocked)
+        {
+            ToggleOpen();
+        }
+        else
+        {
+            if (InventoryController.instance.getActiveItem() == unlock_Key)
+            {
+                isLocked = false;
+                InventoryController.instance.Remove(unlock_Key);
+                ToggleOpen();
+            }
+            else
+            {
+                Debug.Log("No key, cannot open");
+            }
+        }
+
+    }
+
+    public void ToggleOpen()
+    {
+        if (isOpen)
         {
             closeDoor();
-        }else if(!isOpen)
+        }
+        else if (!isOpen)
         {
             openDoor();
         }
@@ -51,7 +77,7 @@ public class Door_Interactable : Interactable
         if (HUDText_gameobject == null)
         {
             HUDText_gameobject = Instantiate(HUDText_prefab, GameObject.FindGameObjectWithTag("Canvas").transform);
-            if(isOpen)
+            if (isOpen)
                 HUDText_gameobject.GetComponent<HUD_Interactable>().setText(closeString);
             else
                 HUDText_gameobject.GetComponent<HUD_Interactable>().setText(openString);

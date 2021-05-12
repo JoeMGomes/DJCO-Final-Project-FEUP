@@ -68,6 +68,16 @@ public class InventoryController : MonoBehaviour
         updateSlots();
     }
 
+    public bool HasItem(Item item)
+    {
+        return ItemList.Contains(item);
+    }
+
+    public Item getActiveItem()
+    {
+        return ActiveItem;
+    }
+
     // Update is called once per frame
     void Update()
     {
