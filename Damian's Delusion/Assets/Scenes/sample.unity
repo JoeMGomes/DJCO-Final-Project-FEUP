@@ -909,6 +909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemList:
   - {fileID: 11400000, guid: ed4f0ea339379344faa9c098fdd8ca9c, type: 2}
+  - {fileID: 11400000, guid: fafa2a32faca0d343801ceb646da09c2, type: 2}
   Player: {fileID: 2002816204}
   InventoryPanel: {fileID: 2027425906}
   ActiveItem: {fileID: 0}
