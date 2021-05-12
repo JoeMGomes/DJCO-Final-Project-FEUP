@@ -41,9 +41,9 @@ public class InventoryController : MonoBehaviour
             index++;
         }
         if (ActiveItem)
-            Player.GetComponent<handController>().UpdateItemModel(ActiveItem.model);
+            Player.GetComponent<HandController>().UpdateItemModel(ActiveItem.model);
         else
-            Player.GetComponent<handController>().UpdateItemModel(null);
+            Player.GetComponent<HandController>().UpdateItemModel(null);
     }
 
     public void Add(Item item)
