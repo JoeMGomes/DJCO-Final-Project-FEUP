@@ -33,6 +33,7 @@ public class Door_Interactable : Interactable
             if (InventoryController.instance.getActiveItem() == unlock_Key)
             {
                 isLocked = false;
+                InventoryController.instance.Remove(unlock_Key);
                 ToggleOpen();
             }
             else
