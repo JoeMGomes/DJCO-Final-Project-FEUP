@@ -10,7 +10,7 @@ public class InventoryController : MonoBehaviour
     public GameObject InventoryPanel;
     public static InventoryController instance;
     private int active = 0;
-    public Item ActiveItem; 
+    public Item ActiveItem;
 
     void updateSlots()
     {
@@ -27,17 +27,23 @@ public class InventoryController : MonoBehaviour
             {
                 slot.item = null;
             }
-            if(index == active){
+            if (index == active)
+            {
                 slot.setActive();
                 ActiveItem = slot.item;
             }
-            else{
+            else
+            {
                 slot.setInactive();
             }
 
             slot.updateinfo();
             index++;
         }
+        if (ActiveItem)
+            Player.GetComponent<HandController>().UpdateItemModel(ActiveItem.model);
+        else
+            Player.GetComponent<HandController>().UpdateItemModel(null);
     }
 
     public void Add(Item item)
@@ -72,11 +78,15 @@ public class InventoryController : MonoBehaviour
             {
                 inventoryPanel.SetActive(true);
                 InventoryController.instance.Player.GetComponentInChildren<cameraLook>().enabled = false;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
             }
             else
             {
                 inventoryPanel.SetActive(false);
                 InventoryController.instance.Player.GetComponentInChildren<cameraLook>().enabled = true;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
             }
         }
         if (Input.GetKeyDown(KeyCode.Alpha1))
