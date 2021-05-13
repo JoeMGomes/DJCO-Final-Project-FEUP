@@ -7,6 +7,11 @@ public class Dialogue
 {
     public string name;
 
+    public Knowledge necessaryKnowledge;
+    [TextArea]
+    public string noKnowledgeSentence;
+
     [TextArea(3, 10)]
     public string[] sentences;
+
 }

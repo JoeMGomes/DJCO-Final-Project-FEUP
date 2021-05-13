@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
 
     public playerMovement mov;
     public cameraLook cam;
+    public PlayerKnowledge player;
 
     // Start is called before the first frame update
     void Start()
@@ -40,9 +41,16 @@ public class DialogueManager : MonoBehaviour
         // restart dialogue action
         sentences.Clear();
 
-        foreach (string sentence in dialogue.sentences)
+        if (!player.ContainsKnowledge(dialogue.necessaryKnowledge))
         {
-            sentences.Enqueue(sentence);
+            sentences.Enqueue(dialogue.noKnowledgeSentence);
+        } 
+        else
+        {
+            foreach (string sentence in dialogue.sentences)
+            {
+                sentences.Enqueue(sentence);
+            }
         }
 
         nameText.text = dialogue.name;

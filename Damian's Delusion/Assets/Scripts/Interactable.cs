@@ -5,15 +5,20 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-
     protected bool isInteracting = false;
 
     public GameObject HUDText_prefab;
     protected GameObject HUDText_gameobject = null;
 
+    public Knowledge knowledge;
+    public PlayerKnowledge player;
+
     public virtual void Interact()
     {
         isInteracting = true;
+
+        if (knowledge.name == "" || player == null) return;
+        player.AddKnowledge(knowledge);
     }
 
     public virtual void OnDefocus()

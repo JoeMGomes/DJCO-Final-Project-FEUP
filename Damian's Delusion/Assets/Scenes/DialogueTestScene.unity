@@ -156,6 +156,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HUDText_prefab: {fileID: 0}
+  knowledge:
+    name: 
+  player: {fileID: 0}
 --- !u!65 &150231239
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -360,6 +363,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HUDText_prefab: {fileID: 0}
+  knowledge:
+    name: 
+  player: {fileID: 0}
 --- !u!65 &289064245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -544,7 +550,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ef445468e63b74b957860e5509d232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HUDText_prefab: {fileID: 0}
+  HUDText_prefab: {fileID: 647781611636967937, guid: 93eac5bca98b55841966e069810bf17d, type: 3}
+  knowledge:
+    name: Cube
+  player: {fileID: 2002816210}
 --- !u!1001 &517852256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -755,8 +764,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2002816205}
-  sensitivityX: 5
-  sensitivityY: 5
+  sensitivityX: 4
+  sensitivityY: 4
   minimumX: -360
   maximumX: 360
   minimumY: -90
@@ -871,12 +880,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HUDText_prefab: {fileID: 647781611636967937, guid: 93eac5bca98b55841966e069810bf17d, type: 3}
+  knowledge:
+    name: 
+  player: {fileID: 2002816210}
   dialogue:
-    name: "tua m\xE3e"
+    name: Sereno
+    necessaryKnowledge:
+      name: Cube
+    noKnowledgeSentence: I'm afraid you are still too weak to listen to what I have
+      to tell you
     sentences:
-    - "ol\xE1"
-    - tudo bem
-    - chupa mos
+    - Hello my dear friend
+    - I have something to tell you
+    - I banged your mom so you could pass LDSO
+    - Tell her I send kisses
 --- !u!1 &1000749835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,6 +1386,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1237629244}
   mov: {fileID: 2002816208}
   cam: {fileID: 662938046}
+  player: {fileID: 2002816210}
 --- !u!4 &1917251901
 Transform:
   m_ObjectHideFlags: 0
@@ -1395,6 +1413,7 @@ GameObject:
   - component: {fileID: 2002816207}
   - component: {fileID: 2002816206}
   - component: {fileID: 2002816208}
+  - component: {fileID: 2002816210}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1444,9 +1463,9 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 2
-  m_Radius: 1.02
+  m_Radius: 0.4
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
@@ -1464,3 +1483,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Speed: 10
   controller: {fileID: 2002816207}
+--- !u!114 &2002816210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002816204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2f7e1a588c04c44bd96b2b6869a6fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

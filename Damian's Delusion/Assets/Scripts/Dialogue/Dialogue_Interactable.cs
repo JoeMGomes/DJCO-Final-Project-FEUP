@@ -16,6 +16,7 @@ public class Dialogue_Interactable : Interactable
 
     override public void Interact()
     {
+        base.Interact();
         Destroy(HUDText_gameobject);
         manager.StartDialogue(dialogue);
     }
