@@ -6,7 +6,7 @@ using UnityEngine;
 public class MessageManager : MonoBehaviour
 {
 
-    private static MessageManager instance;
+    public static MessageManager instance;
     public GameObject messagePrefab;
 
     public List<HUD_Message> messageSlots;
