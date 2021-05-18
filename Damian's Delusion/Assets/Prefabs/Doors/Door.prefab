@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 6871831046438686779}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.805, y: 0, z: 0}
-  m_LocalScale: {x: 1.5566, y: 2.8474, z: 0.062744}
+  m_LocalScale: {x: 1.5566, y: 2.9344444, z: 0.062744}
   m_Children: []
   m_Father: {fileID: 6871831046675471789}
   m_RootOrder: 1
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 6871831046675471788}
   - component: {fileID: 6871831046675471786}
   m_Layer: 0
-  m_Name: Unlocked Door
+  m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,7 +127,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5566, y: 2.8474, z: 0.062744}
+  m_Size: {x: 1.5566, y: 2.934444, z: 0.062744}
   m_Center: {x: 0.805, y: 0, z: 0}
 --- !u!114 &6871831046675471788
 MonoBehaviour:
@@ -143,6 +143,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HUDText_prefab: {fileID: 647781611636967937, guid: 93eac5bca98b55841966e069810bf17d, type: 3}
   isOpen: 0
+  unlock_Key: {fileID: 0}
+  isLocked: 0
 --- !u!95 &6871831046675471786
 Animator:
   serializedVersion: 3
