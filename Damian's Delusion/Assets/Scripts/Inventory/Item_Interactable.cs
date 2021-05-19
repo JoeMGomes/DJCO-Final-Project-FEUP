@@ -10,8 +10,10 @@ public class Item_Interactable : Interactable
         base.Interact();
 
         InventoryController.instance.Add(item);
+        DestroyImmediate(HUDText_gameobject);
         DestroyImmediate(base.gameObject);
     }
+
 
 
      public override void OnFocus()
