@@ -1269,6 +1269,14 @@ PrefabInstance:
       propertyPath: InventoryPanel
       value: 
       objectReference: {fileID: 2027425906}
+    - target: {fileID: 6936730326519524242, guid: 4a345f87b75761946a492401c358c66e, type: 3}
+      propertyPath: ItemList.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6936730326519524242, guid: 4a345f87b75761946a492401c358c66e, type: 3}
+      propertyPath: ItemList.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: b8d1abd83cd533f4ca3a14fb60c60007, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a345f87b75761946a492401c358c66e, type: 3}
 --- !u!1001 &7220098118530888720
