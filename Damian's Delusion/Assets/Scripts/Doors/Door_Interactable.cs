@@ -12,6 +12,9 @@ public class Door_Interactable : Interactable
     private string openString = "Press 'E' to open";
     private string closeString = "Press 'E' to close";
 
+    private string closedMessage = "Door is closed, where is the key?";
+    private string unlockedMessage = "Door unlocked";
+
     public Key unlock_Key;
     public bool isLocked = false;
 
@@ -34,11 +37,13 @@ public class Door_Interactable : Interactable
             {
                 isLocked = false;
                 InventoryController.instance.Remove(unlock_Key);
+                MessageManager.instance.InsertMessage(unlockedMessage);
+
                 ToggleOpen();
             }
             else
             {
-                Debug.Log("No key, cannot open");
+                MessageManager.instance.InsertMessage(closedMessage);
             }
         }
 
