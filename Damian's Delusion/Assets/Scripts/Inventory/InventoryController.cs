@@ -82,7 +82,7 @@ public class InventoryController : MonoBehaviour
 
 
 
-    public void IventoryToggleOn()
+    public void InventoryToggleOn()
     {
         GameObject inventoryPanel = InventoryController.instance.InventoryPanel;
         inventoryPanel.SetActive(true);
@@ -91,7 +91,7 @@ public class InventoryController : MonoBehaviour
         Cursor.visible = true;
     }
 
-    public void IventoryToggleOff()
+    public void InventoryToggleOff()
     {
         GameObject inventoryPanel = InventoryController.instance.InventoryPanel;
         inventoryPanel.SetActive(false);
@@ -108,11 +108,11 @@ public class InventoryController : MonoBehaviour
             GameObject inventoryPanel = InventoryController.instance.InventoryPanel;
             if (!inventoryPanel.activeSelf)
             {
-                IventoryToggleOn();
+                InventoryToggleOn();
             }
             else
             {
-                IventoryToggleOff();
+                InventoryToggleOff();
             }
         }
         if (Input.GetKeyDown(KeyCode.Alpha1))
