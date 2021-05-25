@@ -16,6 +16,8 @@ public class Dialogue_Interactable : Interactable
 
     override public void Interact()
     {
+        InventoryController.instance.InventoryToggleOff();
+        InventoryController.instance.CanOpen = false;
         Destroy(HUDText_gameobject);
         manager.StartDialogue(dialogue);
     }
@@ -32,5 +34,6 @@ public class Dialogue_Interactable : Interactable
     override public void OnDefocus()
     {
         base.OnDefocus();
+        InventoryController.instance.CanOpen = true;
     }
 }

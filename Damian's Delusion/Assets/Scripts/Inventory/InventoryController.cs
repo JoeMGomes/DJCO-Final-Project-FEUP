@@ -12,6 +12,8 @@ public class InventoryController : MonoBehaviour
     private int active = 0;
     public Item ActiveItem;
 
+    public bool CanOpen = true;
+
     void updateSlots()
     {
 
@@ -78,25 +80,39 @@ public class InventoryController : MonoBehaviour
         return ActiveItem;
     }
 
+
+
+    public void InventoryToggleOn()
+    {
+        GameObject inventoryPanel = InventoryController.instance.InventoryPanel;
+        inventoryPanel.SetActive(true);
+        InventoryController.instance.Player.GetComponentInChildren<cameraLook>().enabled = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+    public void InventoryToggleOff()
+    {
+        GameObject inventoryPanel = InventoryController.instance.InventoryPanel;
+        inventoryPanel.SetActive(false);
+        InventoryController.instance.Player.GetComponentInChildren<cameraLook>().enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Tab) && CanOpen)
         {
             GameObject inventoryPanel = InventoryController.instance.InventoryPanel;
             if (!inventoryPanel.activeSelf)
             {
-                inventoryPanel.SetActive(true);
-                InventoryController.instance.Player.GetComponentInChildren<cameraLook>().enabled = false;
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
+                InventoryToggleOn();
             }
             else
             {
-                inventoryPanel.SetActive(false);
-                InventoryController.instance.Player.GetComponentInChildren<cameraLook>().enabled = true;
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
+                InventoryToggleOff();
             }
         }
         if (Input.GetKeyDown(KeyCode.Alpha1))
