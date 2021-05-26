@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6115710068560932521}
   - component: {fileID: 6369536581696167641}
   - component: {fileID: 4126785588413470663}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: key1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 6599881107443196372}
   m_LocalRotation: {x: -0, y: 0.06104855, z: -0, w: 0.99813485}
   m_LocalPosition: {x: 1.4292284, y: 1.92, z: 1.5473546}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

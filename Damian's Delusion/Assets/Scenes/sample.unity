@@ -677,7 +677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HUDText_prefab: {fileID: 647781611636967937, guid: 93eac5bca98b55841966e069810bf17d, type: 3}
-  item: {fileID: 11400000, guid: b8d1abd83cd533f4ca3a14fb60c60007, type: 2}
+  item: {fileID: 0}
 --- !u!65 &917791585
 BoxCollider:
   m_ObjectHideFlags: 0
