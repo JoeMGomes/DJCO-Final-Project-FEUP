@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6936730326519524241}
   - component: {fileID: 6936730325812572398}
   - component: {fileID: 6936730326519524242}
+  - component: {fileID: 6936730325528478826}
   m_Layer: 0
   m_Name: Game_Manager
   m_TagString: Untagged
@@ -65,3 +66,23 @@ MonoBehaviour:
   Player: {fileID: 0}
   InventoryPanel: {fileID: 0}
   ActiveItem: {fileID: 0}
+--- !u!114 &6936730325528478826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6936730326519524240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fd9cf9129dca694ea8b9426874eb357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messagePrefab: {fileID: 0}
+  messageSlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  queuedMessages: []
+  messageTime: 1
