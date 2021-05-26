@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4794401374720351330}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: model2 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 1434329590322095654}
   - component: {fileID: 7286265760274797565}
   - component: {fileID: 5943394944363774333}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

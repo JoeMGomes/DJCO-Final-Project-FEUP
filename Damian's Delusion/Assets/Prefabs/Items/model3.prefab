@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 924229743622772732}
   - component: {fileID: 5060913091259020032}
   - component: {fileID: 6323787616612318660}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCylinder5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7590710543424598006}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: model3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
