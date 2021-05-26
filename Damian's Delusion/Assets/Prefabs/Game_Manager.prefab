@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6936730325812572398}
   - component: {fileID: 6936730326519524242}
   - component: {fileID: 6936730325528478826}
+  - component: {fileID: 1447101046}
   m_Layer: 0
   m_Name: Game_Manager
   m_TagString: Untagged
@@ -48,6 +49,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 0}
   mov: {fileID: 0}
   cam: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &6936730326519524242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,12 +62,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d44d3d9f5892e44494d9c1e04ef92de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemList:
-  - {fileID: 11400000, guid: ed4f0ea339379344faa9c098fdd8ca9c, type: 2}
-  - {fileID: 11400000, guid: fafa2a32faca0d343801ceb646da09c2, type: 2}
+  ItemList: []
   Player: {fileID: 0}
   InventoryPanel: {fileID: 0}
   ActiveItem: {fileID: 0}
+  CanOpen: 1
 --- !u!114 &6936730325528478826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,7 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fd9cf9129dca694ea8b9426874eb357, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  messagePrefab: {fileID: 0}
+  messagePrefab: {fileID: 647781611636967937, guid: 93eac5bca98b55841966e069810bf17d, type: 3}
   messageSlots:
   - {fileID: 0}
   - {fileID: 0}
@@ -86,3 +87,20 @@ MonoBehaviour:
   - {fileID: 0}
   queuedMessages: []
   messageTime: 1
+--- !u!114 &1447101046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6936730326519524240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 601d9cbe499c4404faec7f75d813a469, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
