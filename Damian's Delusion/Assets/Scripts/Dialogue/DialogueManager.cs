@@ -16,19 +16,11 @@ public class DialogueManager : MonoBehaviour
     private TextMeshProUGUI nameText;
     private TextMeshProUGUI sentenceText;
     private TextMeshProUGUI[] buttonsText;
-    //private TextMeshProUGUI button0Text;
-    //private TextMeshProUGUI button1Text;
-    //private TextMeshProUGUI button2Text;
-    //private TextMeshProUGUI button3Text;
 
     // UI GameObjects to easily enable/disable them
     private GameObject overlay;
     private GameObject actionTip;
     private GameObject[] buttons;
-    //private GameObject button0;
-    //private GameObject button1;
-    //private GameObject button2;
-    //private GameObject button3;
 
     // manually set these on Unity
     public GameObject dialogueBox;

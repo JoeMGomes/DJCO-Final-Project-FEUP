@@ -34860,8 +34860,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HUDText_prefab: {fileID: 647781611636967937, guid: 93eac5bca98b55841966e069810bf17d, type: 3}
-  knowledge:
-    name: safe1
+  acquiredKnowledge:
+    name: 
   player: {fileID: 1728853485}
   isLocked: 1
   unlockKnowledge:
@@ -35324,66 +35324,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 867940711925098818, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: m_Depth
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 867940711925098818, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: m_ClearFlags
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 867940711925098818, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: field of view
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 867940711925098818, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: far clip plane
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 867940711925098818, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: m_RenderingPath
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 867940711925098818, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: near clip plane
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 867940711925098818, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: m_BackGroundColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 867940711925098818, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0.2924528
-      objectReference: {fileID: 0}
-    - target: {fileID: 867940711925098818, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0.19302659
-      objectReference: {fileID: 0}
-    - target: {fileID: 867940711925098818, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0.16967781
-      objectReference: {fileID: 0}
-    - target: {fileID: 867940711925098818, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1323432544560982593, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 2594287647242677620, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5161209271016596961, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.153
-      objectReference: {fileID: 0}
-    - target: {fileID: 5161209271016596961, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.99
-      objectReference: {fileID: 0}
     - target: {fileID: 8978409642285412086, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
       propertyPath: m_Name
       value: Player
@@ -35431,26 +35371,6 @@ PrefabInstance:
     - target: {fileID: 8978409642285412087, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8978409643633935238, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: m_ClearFlags
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8978409643633935238, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8978409643633935238, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8978409643633935238, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8978409643633935238, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
@@ -36363,7 +36283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HUDText_prefab: {fileID: 647781611636967937, guid: 93eac5bca98b55841966e069810bf17d, type: 3}
-  knowledge:
+  acquiredKnowledge:
     name: 
   player: {fileID: 1728853485}
   dialogue:
@@ -36371,9 +36291,9 @@ MonoBehaviour:
     necessaryKnowledge:
       name: Porta
     noKnowledgeSentence: Leave me alone.
-    sentences:
-    - Want the door key? Me too.
-    - Help me find it and I will help you leave.
+    initialSentence: 
+    questions: []
+    callback: {fileID: 0}
 --- !u!136 &2140767023
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -37774,7 +37694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HUDText_prefab: {fileID: 647781611636967937, guid: 93eac5bca98b55841966e069810bf17d, type: 3}
-  knowledge:
+  acquiredKnowledge:
     name: 
   player: {fileID: 1728853485}
   item: {fileID: 11400000, guid: b8d1abd83cd533f4ca3a14fb60c60007, type: 2}
