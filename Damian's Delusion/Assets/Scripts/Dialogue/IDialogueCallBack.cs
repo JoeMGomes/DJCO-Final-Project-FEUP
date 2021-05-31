@@ -4,7 +4,7 @@ using UnityEngine;
 public class IDialogueCallBack : MonoBehaviour
 {
 
-    public void run(int callbackNumber)
+    public void Run(int callbackNumber)
     {
         switch (callbackNumber)
         {
@@ -19,6 +19,9 @@ public class IDialogueCallBack : MonoBehaviour
                 break;
             case 3:
                 StartCoroutine("CallBack_4");
+                break;
+            default:
+
                 break;
         }
     }

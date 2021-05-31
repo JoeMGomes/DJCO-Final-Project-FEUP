@@ -40,7 +40,7 @@ public class Dialogue
 
     internal void Callback(int questionNumber)
     {
-        callback.run(questionNumber);
+        callback.Run(questionNumber);
 
     }
 }

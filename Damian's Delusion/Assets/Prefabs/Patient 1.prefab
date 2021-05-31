@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6621920536398834055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6621920536398834048}
+  - component: {fileID: 6621920536398834049}
+  - component: {fileID: 6621920536398834051}
+  - component: {fileID: 6621920536398834054}
+  m_Layer: 0
+  m_Name: Patient 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6621920536398834048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6621920536398834055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.92, y: 0.44, z: -1.197}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6621920536398834049
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6621920536398834055}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.59478045, y: 1.1134405, z: 1.8212326}
+  m_Center: {x: 0.20260978, y: -0.23345387, z: 0.048452973}
+--- !u!114 &6621920536398834051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6621920536398834055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60579af21d8b7af4c8bbc9b4a691276a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+--- !u!114 &6621920536398834054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6621920536398834055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08aa07fd446dfe44afcaf9c83c7da6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDText_prefab: {fileID: 647781611636967937, guid: 93eac5bca98b55841966e069810bf17d, type: 3}
+  acquiredKnowledge:
+    name: 
+  player: {fileID: 0}
+  dialogue:
+    name: Patient 1
+    necessaryKnowledge:
+      name: 
+    noKnowledgeSentence: 
+    initialSentence: You're not supposed to be here...
+    questions:
+    - question: Why am I here??
+      necessaryKnowledge:
+        name: 
+      sentences:
+      - " I dunno \xAF\\(\u30C4)/\xAF"
+      - ' I heard the guards saying something about a crazy fella but not much more...'
+    - question: Who are you?
+      necessaryKnowledge:
+        name: 
+      sentences:
+      - 'Why do you care? '
+      - Sorry... didn't mean to be rude
+      - You don't need tknow who I am...
+    - question: What is the deal with the other guy?
+      necessaryKnowledge:
+        name: 
+      sentences:
+      - Who?
+      - The screamy one?
+      - Try to avoid him, he ain't very sane, even for an Asylum patient.
+    - question: 'Do you know how to open this door? I need to leave.   '
+      necessaryKnowledge:
+        name: 
+      sentences:
+      - 'Do you really? '
+      - Ain't the first one telling me that... *Opens the door*
+      - Whatever...
+    callback: {fileID: 6621920536398834051}

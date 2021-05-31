@@ -302,6 +302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 6941882366851625654, guid: d1ef2f59370a707489a5508e27b91999, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1ef2f59370a707489a5508e27b91999, type: 3}
 --- !u!1 &190654618
@@ -1985,17 +1989,6 @@ Transform:
   m_Father: {fileID: 2002816205}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1710582189 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6871831046675471788, guid: d1ef2f59370a707489a5508e27b91999, type: 3}
-  m_PrefabInstance: {fileID: 180712609}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41a9f84397eb210469887a206c79592b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1819744111
 GameObject:
   m_ObjectHideFlags: 0
@@ -2029,7 +2022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60579af21d8b7af4c8bbc9b4a691276a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 1710582189}
+  door: {fileID: 0}
 --- !u!114 &1819744113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2060,6 +2053,16 @@ MonoBehaviour:
       sentences:
       - OLHA CALMA FILHO
       - "J\xE1 t\xE1, c\xE3o."
+    - question: Does nothing
+      necessaryKnowledge:
+        name: 
+      sentences:
+      - 
+    - question: Does nothing
+      necessaryKnowledge:
+        name: 
+      sentences:
+      - 
     - question: Does nothing
       necessaryKnowledge:
         name: 
@@ -2293,7 +2296,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52cf061f115c4b14090443be5e6c1ed2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  focus: {fileID: 0}
   interactionDistance: 1
 --- !u!143 &2002816207
 CharacterController:
