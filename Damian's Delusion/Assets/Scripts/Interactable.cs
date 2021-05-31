@@ -15,7 +15,16 @@ public class Interactable : MonoBehaviour
 
     public void Start()
     {
-        if (player == null) Debug.LogError("player knowledge component missing in interactable");
+        if (player == null)
+        {
+            player = GameObject.Find("Player").GetComponent<PlayerKnowledge>();
+
+            if(player == null)
+            {
+                Debug.LogError("Player knowledge component missing in interactable: " + gameObject.transform.name + ". Does the scene have a player?");
+                Debug.Break();
+            }
+        }
     }
 
     public virtual void Interact()

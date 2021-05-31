@@ -2064,7 +2064,6 @@ MonoBehaviour:
       necessaryKnowledge:
         name: 
       sentences:
-      - Mesmo nada
       - 
     callback: {fileID: 1819744112}
 --- !u!65 &1819744114
