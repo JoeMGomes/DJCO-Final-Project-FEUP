@@ -9,6 +9,8 @@ public class DialogueManager : MonoBehaviour
 
     // sentences to display
     private Queue<string> sentences;
+    // Question number to get the right callback
+    private int questionNumber = -1;
 
     // text components to edit easily
     private TextMeshProUGUI nameText;
@@ -110,6 +112,7 @@ public class DialogueManager : MonoBehaviour
 
     private void ResetInitialDialogue()
     {
+        questionNumber = -1;
         sentences.Clear();
         sentenceText.text = dialogue.initialSentence;
         actionTip.SetActive(true);
@@ -142,6 +145,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
+            dialogue.Callback(questionNumber);
             ResetInitialDialogue();
             return;
         }
@@ -153,6 +157,8 @@ public class DialogueManager : MonoBehaviour
 
     public void PrepareSentences(int button)
     {
+        questionNumber = button;
+
         string[] sent = dialogue.GetSentences(button);
 
         foreach (string s in sent)

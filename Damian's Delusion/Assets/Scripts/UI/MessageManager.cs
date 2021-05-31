@@ -43,12 +43,10 @@ public class MessageManager : MonoBehaviour
             Debug.Log(i);
             if (i >= queuedMessages.Count)
             {
-                Debug.Log("emppt");
                 messageSlots[i].SetText("");
             }
             else
             {
-                Debug.Log("set");
                 messageSlots[i].SetText(queuedMessages[i]);
 
             }
