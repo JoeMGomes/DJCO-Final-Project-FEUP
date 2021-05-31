@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,7 @@ public class Dialogue
     public string initialSentence;
 
     public DialogueQuestion[] questions;
+    public IDialogueCallBack callback;
 
     public string GetQuestion(int index)
     {
@@ -34,5 +36,11 @@ public class Dialogue
     public int GetQuestionsSize()
     {
         return questions.Length;
+    }
+
+    internal void Callback(int questionNumber)
+    {
+        callback.run(questionNumber);
+
     }
 }

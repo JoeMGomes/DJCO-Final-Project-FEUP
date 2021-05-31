@@ -35,7 +35,7 @@ public class Door_Interactable : Interactable
         {
             if (InventoryController.instance.getActiveItem() == unlock_Key)
             {
-                isLocked = false;
+                Unlock();
                 InventoryController.instance.Remove(unlock_Key);
                 MessageManager.instance.InsertMessage(unlockedMessage);
 
@@ -47,6 +47,11 @@ public class Door_Interactable : Interactable
             }
         }
 
+    }
+
+    public void Unlock()
+    {
+        isLocked = false;
     }
 
     public void ToggleOpen()
