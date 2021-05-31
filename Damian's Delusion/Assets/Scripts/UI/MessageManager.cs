@@ -40,7 +40,7 @@ public class MessageManager : MonoBehaviour
 
         for (int i = 0; i < messageSlots.Count; i++)
         {
-            Debug.Log(i);
+
             if (i >= queuedMessages.Count)
             {
                 messageSlots[i].SetText("");

@@ -20,7 +20,7 @@ public class Door_Interactable : Interactable
 
     private void Awake()
     {
-        anim = gameObject.GetComponent<Animator>();
+        anim = gameObject.GetComponentInParent<Animator>();
     }
 
     override public void Interact()
