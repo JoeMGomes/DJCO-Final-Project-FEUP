@@ -11,7 +11,7 @@ public class Patient1 : IDialogueCallBack
     {
         door.Unlock();
         MessageManager.instance.InsertMessage("Door opened nearby...");
-
+        DialogueManager.instance.EndDialogue();
         //Enumerator return is mandatory to enable more complex callbacks
         yield return new WaitForSeconds(0.01f);
     }

@@ -65,6 +65,8 @@ public class Door_Interactable : Interactable
             openDoor();
         }
 
+        Debug.Log("Door is"+isOpen);
+
     }
 
     private void openDoor()

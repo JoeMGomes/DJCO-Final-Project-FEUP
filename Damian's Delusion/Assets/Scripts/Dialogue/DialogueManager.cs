@@ -5,6 +5,9 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
+    public static DialogueManager instance;
+
+
     private Dialogue dialogue;
 
     // sentences to display
@@ -31,6 +34,9 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        instance = this;
+
         sentences = new Queue<string>();
 
         if (dialogueBox == null) Debug.Log("component DialogueBox [UI] is missing");
