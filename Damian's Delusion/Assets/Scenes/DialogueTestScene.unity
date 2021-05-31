@@ -2060,6 +2060,12 @@ MonoBehaviour:
       sentences:
       - OLHA CALMA FILHO
       - "J\xE1 t\xE1, c\xE3o."
+    - question: Does nothing
+      necessaryKnowledge:
+        name: 
+      sentences:
+      - Mesmo nada
+      - 
     callback: {fileID: 1819744112}
 --- !u!65 &1819744114
 BoxCollider:
