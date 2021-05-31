@@ -10,15 +10,18 @@ public class Interactable : MonoBehaviour
     public GameObject HUDText_prefab;
     protected GameObject HUDText_gameobject = null;
 
-    public Knowledge knowledge;
+    public Knowledge acquiredKnowledge;
     public PlayerKnowledge player;
+
+    public void Start()
+    {
+        if (player == null) Debug.LogError("player knowledge component missing in interactable");
+    }
 
     public virtual void Interact()
     {
         isInteracting = true;
-
-        if (knowledge.name == "" || player == null) return;
-        player.AddKnowledge(knowledge);
+        player.AddKnowledge(acquiredKnowledge);
     }
 
     public virtual void OnDefocus()

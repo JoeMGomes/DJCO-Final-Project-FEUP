@@ -7,13 +7,17 @@ public class Knowledge
 {
     public string name;
 
-    public override bool Equals(System.Object obj)
+    public override bool Equals(object obj)
     {
         if (obj == null) return false;
         Knowledge other = obj as Knowledge;
-        if ((System.Object)other == null) return false;
+        if (other == null) return false;
 
-        Debug.Log(name + " == " + other.name);
         return name == other.name;
+    }
+
+    public override int GetHashCode()
+    {
+        return name.GetHashCode();
     }
 }
