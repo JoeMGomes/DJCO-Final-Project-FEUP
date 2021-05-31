@@ -11,7 +11,28 @@ public class Dialogue
     [TextArea]
     public string noKnowledgeSentence;
 
-    [TextArea(3, 10)]
-    public string[] sentences;
+    [TextArea]
+    public string initialSentence;
 
+    public DialogueQuestion[] questions;
+
+    public string GetQuestion(int index)
+    {
+        return questions[index].question;
+    }
+
+    public string[] GetSentences(int index)
+    {
+        return questions[index].sentences;
+    }
+
+    public Knowledge GetKnowledgeQuestion(int index)
+    {
+        return questions[index].necessaryKnowledge;
+    }
+
+    public int GetQuestionsSize()
+    {
+        return questions.Length;
+    }
 }
