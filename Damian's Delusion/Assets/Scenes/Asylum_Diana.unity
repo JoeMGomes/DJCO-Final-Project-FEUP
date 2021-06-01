@@ -33140,6 +33140,7 @@ GameObject:
   - component: {fileID: 564742521}
   - component: {fileID: 564742520}
   - component: {fileID: 564742519}
+  - component: {fileID: 564742524}
   m_Layer: 0
   m_Name: Patient 3
   m_TagString: Untagged
@@ -33168,7 +33169,7 @@ MonoBehaviour:
     necessaryKnowledge:
       name: 
     noKnowledgeSentence: 
-    initialSentence: Nobody knows the <hicks> trouble I've seen
+    initialSentence: Nobody knows the <hicks> troubles  I've seen
     questions:
     - question: 'Can you help me get out of here? '
       necessaryKnowledge:
@@ -33198,7 +33199,7 @@ MonoBehaviour:
       - Now we are talking
       - I dont know why you want to go there
       - But good luck *Sips wine* *Gives key*
-    callback: {fileID: 768499224}
+    callback: {fileID: 564742524}
 --- !u!136 &564742520
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -33276,6 +33277,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &564742524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564742518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 381d66895b3a557449c5c7a29002e82b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: {fileID: 0}
 --- !u!4 &588092076 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1773181206935733900, guid: 2169a709fe40b7647acc1dc350486775, type: 3}
@@ -33287,7 +33301,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17420
+  m_Name: pb_Mesh80118
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -33962,17 +33976,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4952884074169967803, guid: d1ef2f59370a707489a5508e27b91999, type: 3}
   m_PrefabInstance: {fileID: 749478327}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &768499224 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6621920536398834051, guid: 84ce02911dbeb2a4e93449ac90058ed4, type: 3}
-  m_PrefabInstance: {fileID: 1508893426}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60579af21d8b7af4c8bbc9b4a691276a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &770105225 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1773181206935733900, guid: 2169a709fe40b7647acc1dc350486775, type: 3}
@@ -38499,13 +38502,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HUDText_prefab: {fileID: 647781611636967937, guid: 93eac5bca98b55841966e069810bf17d, type: 3}
   acquiredKnowledge:
-    name: 
+    name: Safe
   player: {fileID: 1728853485}
   isLocked: 1
   unlockKnowledge:
     name: safeCode
+  content: {fileID: 11400000, guid: b8d1abd83cd533f4ca3a14fb60c60007, type: 2}
+  contentKnowledge:
+    name: Alcohol
   codePanel: {fileID: 1315564503033360060}
-  unlockCode: 1234
+  unlockCode: 4783
 --- !u!1 &1672196006
 GameObject:
   m_ObjectHideFlags: 0
@@ -38907,7 +38913,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8978409642285412087, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.4
+      value: 26.1
       objectReference: {fileID: 0}
     - target: {fileID: 8978409642285412087, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
       propertyPath: m_LocalPosition.y
@@ -38915,7 +38921,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8978409642285412087, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.4
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8978409642285412087, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
       propertyPath: m_LocalRotation.w
