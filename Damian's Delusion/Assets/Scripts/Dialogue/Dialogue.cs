@@ -38,8 +38,10 @@ public class Dialogue
         return questions.Length;
     }
 
-    internal void Callback(int questionNumber)
+    public void Callback(int questionNumber)
     {
+        if (callback == null) return;
+
         callback.Run(questionNumber);
 
     }

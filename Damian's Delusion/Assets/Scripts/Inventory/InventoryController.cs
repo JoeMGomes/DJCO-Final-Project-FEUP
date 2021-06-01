@@ -50,6 +50,8 @@ public class InventoryController : MonoBehaviour
 
     public void Add(Item item)
     {
+        MessageManager.instance.InsertMessage("Added "+ item.name + " to inventory");
+
         if (ItemList.Count < 6)
         {
             ItemList.Add(item);
