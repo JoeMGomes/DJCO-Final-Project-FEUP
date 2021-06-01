@@ -28,47 +28,68 @@ public class cameraLook : MonoBehaviour
 
     Quaternion originalRotation;
     Quaternion originalRotationPlayer;
+
+    private float shakeDuration;
+    private Vector3 originalPos;
+    private float shakeAmount;
+    private bool isShaking;
     void Update()
     {
-        rotAverageY = 0f;
-        rotAverageX = 0f;
 
-        rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
-        rotationX += Input.GetAxis("Mouse X") * sensitivityX;
-
-        rotArrayY.Add(rotationY);
-        rotArrayX.Add(rotationX);
-
-        if (rotArrayY.Count >= frameCounter)
+        if (shakeDuration > 0)
         {
-            rotArrayY.RemoveAt(0);
+            transform.localPosition = originalPos + Random.insideUnitSphere * shakeAmount;
+
+            shakeDuration -= Time.deltaTime;
         }
-        if (rotArrayX.Count >= frameCounter)
+        else
         {
-            rotArrayX.RemoveAt(0);
+            if (isShaking)
+            {
+                shakeDuration = 0f;
+                transform.localPosition = originalPos;
+                isShaking = false;
+            }
+
+            rotAverageY = 0f;
+            rotAverageX = 0f;
+
+            rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
+            rotationX += Input.GetAxis("Mouse X") * sensitivityX;
+
+            rotArrayY.Add(rotationY);
+            rotArrayX.Add(rotationX);
+
+            if (rotArrayY.Count >= frameCounter)
+            {
+                rotArrayY.RemoveAt(0);
+            }
+            if (rotArrayX.Count >= frameCounter)
+            {
+                rotArrayX.RemoveAt(0);
+            }
+
+            for (int j = 0; j < rotArrayY.Count; j++)
+            {
+                rotAverageY += rotArrayY[j];
+            }
+            for (int i = 0; i < rotArrayX.Count; i++)
+            {
+                rotAverageX += rotArrayX[i];
+            }
+
+            rotAverageY /= rotArrayY.Count;
+            rotAverageX /= rotArrayX.Count;
+
+            rotAverageY = ClampAngle(rotAverageY, minimumY, maximumY);
+            rotAverageX = ClampAngle(rotAverageX, minimumX, maximumX);
+
+            Quaternion yQuaternion = Quaternion.AngleAxis(rotAverageY, Vector3.left);
+            Quaternion xQuaternion = Quaternion.AngleAxis(rotAverageX, Vector3.up);
+
+            transform.localRotation = originalRotation * yQuaternion;
+            player.localRotation = originalRotationPlayer * xQuaternion;
         }
-
-        for (int j = 0; j < rotArrayY.Count; j++)
-        {
-            rotAverageY += rotArrayY[j];
-        }
-        for (int i = 0; i < rotArrayX.Count; i++)
-        {
-            rotAverageX += rotArrayX[i];
-        }
-
-        rotAverageY /= rotArrayY.Count;
-        rotAverageX /= rotArrayX.Count;
-
-        rotAverageY = ClampAngle(rotAverageY, minimumY, maximumY);
-        rotAverageX = ClampAngle(rotAverageX, minimumX, maximumX);
-
-        Quaternion yQuaternion = Quaternion.AngleAxis(rotAverageY, Vector3.left);
-        Quaternion xQuaternion = Quaternion.AngleAxis(rotAverageX, Vector3.up);
-
-        transform.localRotation = originalRotation * yQuaternion;
-        player.localRotation = originalRotationPlayer * xQuaternion;
-
     }
 
     void Start()
@@ -94,5 +115,15 @@ public class cameraLook : MonoBehaviour
             }
         }
         return Mathf.Clamp(angle, min, max);
+    }
+
+    public void Shake(float duration, float amount)
+    {
+        if (isShaking) return;
+
+        originalPos = transform.localPosition;
+        shakeDuration = duration;
+        shakeAmount = amount;
+        isShaking = true;
     }
 }

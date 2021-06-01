@@ -31609,17 +31609,9 @@ MonoBehaviour:
   assetGuid: 
   m_Mesh: {fileID: 597554724}
   m_IsSelectable: 1
-  m_SelectedFaces: db030000
-  m_SelectedEdges:
-  - a: 3951
-    b: 3950
-  - a: 3950
-    b: 3949
-  - a: 3949
-    b: 3948
-  - a: 3948
-    b: 3951
-  m_SelectedVertices: 6f0f00006e0f00006d0f00006c0f0000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!4 &179027076
 Transform:
   m_ObjectHideFlags: 0
@@ -38492,6 +38484,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8978409643633935236, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
+      propertyPath: sensitivityX
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8978409643633935236, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
+      propertyPath: sensitivityY
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
 --- !u!114 &1728853485 stripped
@@ -40612,6 +40612,67 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1368335452529904347}
   m_Mesh: {fileID: 8659943070623925175, guid: f2443bfa56fe50b4e8845652e59c06e4, type: 3}
+--- !u!65 &4002259583117836672
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4002259583117836678}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.59478045, y: 1.1134405, z: 1.8212326}
+  m_Center: {x: 0.20260978, y: -0.23345387, z: 0.048452973}
+--- !u!4 &4002259583117836673
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4002259583117836678}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.95695, y: 0.48, z: 9.09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4002259583117836678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4002259583117836673}
+  - component: {fileID: 4002259583117836672}
+  - component: {fileID: 4002259583117836679}
+  m_Layer: 0
+  m_Name: Jumpscare
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &4002259583117836679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4002259583117836678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03c5faa17ebba1847958d212845f2259, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDText_prefab: {fileID: 647781611636967937, guid: 93eac5bca98b55841966e069810bf17d, type: 3}
+  acquiredKnowledge:
+    name: 
+  player: {fileID: 0}
 --- !u!4 &4148352363947529317
 Transform:
   m_ObjectHideFlags: 0
