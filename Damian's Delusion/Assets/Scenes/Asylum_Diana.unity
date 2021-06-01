@@ -33289,7 +33289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 381d66895b3a557449c5c7a29002e82b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 0}
+  key: {fileID: 11400000, guid: fafa2a32faca0d343801ceb646da09c2, type: 2}
 --- !u!4 &588092076 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1773181206935733900, guid: 2169a709fe40b7647acc1dc350486775, type: 3}
