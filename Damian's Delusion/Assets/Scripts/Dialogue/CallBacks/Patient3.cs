@@ -6,9 +6,11 @@ public class Patient3 : IDialogueCallBack
 {
 
     public Key key;
+    public Item wine;
 
     public override IEnumerator CallBack_4()
     {
+        InventoryController.instance.Remove(wine);
         MessageManager.instance.InsertMessage("Alcohol lost");
         InventoryController.instance.Add(key);
         MessageManager.instance.InsertMessage("Key Received");
