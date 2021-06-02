@@ -21,7 +21,7 @@ public class DialogueManager : MonoBehaviour
     private TextMeshProUGUI[] buttonsText;
 
     // UI GameObjects to easily enable/disable them
-    private GameObject overlay;
+    private GameObject buttonsLayer;
     private GameObject actionTip;
     private GameObject[] buttons;
 
@@ -51,19 +51,19 @@ public class DialogueManager : MonoBehaviour
         buttons = new GameObject[4];
         buttonsText = new TextMeshProUGUI[4];
 
+        buttonsLayer = dialogueBox.transform.Find("ButtonsLayer").gameObject;
+        if (buttonsLayer == null) Debug.LogError("could not find buttons layer");
+        buttonsLayer.SetActive(true);
+
         for (int i = 0; i < 4; i++)
         {
-            Transform button = dialogueBox.transform.Find("Button" + i);
+            Transform button = buttonsLayer.transform.Find("Button" + i);
             buttons[i] = button.gameObject;
             buttonsText[i] = button.Find("Text").gameObject.GetComponent<TextMeshProUGUI>();
             if (buttons[i] == null || buttonsText[i] == null) Debug.LogError("could not find button " + i + " in dialogue box");
         }
 
-        overlay = dialogueBox.transform.Find("ContinueOverlay").gameObject;
-        if (overlay == null) Debug.LogError("could not find continue overlay");
-        overlay.SetActive(false);
-
-        actionTip = dialogueBox.transform.Find("ActionTip").gameObject;
+        actionTip = buttonsLayer.transform.Find("ActionTip").gameObject;
         if (actionTip == null) Debug.LogError("could not find action tip");
     }
 
@@ -114,7 +114,7 @@ public class DialogueManager : MonoBehaviour
         sentences.Clear();
         sentenceText.text = dialogue.initialSentence;
         actionTip.SetActive(true);
-        overlay.SetActive(false);
+        buttonsLayer.SetActive(true);
     }
 
     private void GetButtons()
@@ -164,7 +164,7 @@ public class DialogueManager : MonoBehaviour
             sentences.Enqueue(s);
         }
 
-        overlay.SetActive(true);
+        buttonsLayer.SetActive(false);
 
         DisplayNextSentence();
     }
