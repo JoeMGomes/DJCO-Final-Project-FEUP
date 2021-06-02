@@ -20,7 +20,7 @@ public class Door_Interactable : Interactable
 
     private void Awake()
     {
-        anim = gameObject.GetComponent<Animator>();
+        anim = gameObject.GetComponentInParent<Animator>();
     }
 
     override public void Interact()
@@ -35,7 +35,7 @@ public class Door_Interactable : Interactable
         {
             if (InventoryController.instance.getActiveItem() == unlock_Key)
             {
-                isLocked = false;
+                Unlock();
                 InventoryController.instance.Remove(unlock_Key);
                 MessageManager.instance.InsertMessage(unlockedMessage);
 
@@ -49,6 +49,11 @@ public class Door_Interactable : Interactable
 
     }
 
+    public void Unlock()
+    {
+        isLocked = false;
+    }
+
     public void ToggleOpen()
     {
         if (isOpen)
@@ -59,6 +64,8 @@ public class Door_Interactable : Interactable
         {
             openDoor();
         }
+
+        Debug.Log("Door is"+isOpen);
 
     }
 

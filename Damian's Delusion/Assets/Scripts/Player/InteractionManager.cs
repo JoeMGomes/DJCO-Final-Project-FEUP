@@ -7,7 +7,7 @@ public class InteractionManager : MonoBehaviour
 {
 
     private Camera cam;
-    public Interactable focus = null;
+    private Interactable focus = null;
     public float interactionDistance = 1.0f;
 
     // Start is called before the first frame update

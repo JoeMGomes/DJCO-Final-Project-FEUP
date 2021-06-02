@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 657a96af90ed518449f9ae59e6475350, type: 3}
-  m_Name: knife
+  m_Script: {fileID: 11500000, guid: 4113e6e0008f8854e82f5aa3a5eee515, type: 3}
+  m_Name: wine
   m_EditorClassIdentifier: 
-  ItemName: knife
+  ItemName: Bottle of wine
   icon: {fileID: 21300000, guid: 5559de0813763ce47ab7285cea3c0ee4, type: 3}
-  model: {fileID: 8544366570998369235, guid: c4a009b74e04c1441b505dc228543d4e, type: 3}
+  model: {fileID: 7945314021926756975, guid: 165966e878ce71d49865ece81569dc0a, type: 3}

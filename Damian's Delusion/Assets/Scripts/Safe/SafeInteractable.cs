@@ -9,6 +9,9 @@ public class SafeInteractable : Interactable
 
     public Knowledge unlockKnowledge;
 
+    public Item content;
+
+    public Knowledge contentKnowledge;
     public GameObject codePanel;
     private string openString = "Press 'E' to unlock";
     private string failedMessage = "Wrong code";
@@ -34,6 +37,8 @@ override public void Interact()
     public void Open(){
         MessageManager.instance.InsertMessage(unlockedMessage);
         isLocked = false;
+        InventoryController.instance.Add(content);
+        base.player.AddKnowledge(contentKnowledge);
     }
 
      public void Fail(){

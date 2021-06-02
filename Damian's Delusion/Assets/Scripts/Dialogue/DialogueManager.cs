@@ -5,28 +5,25 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
+    public static DialogueManager instance;
+
+
     private Dialogue dialogue;
 
     // sentences to display
     private Queue<string> sentences;
+    // Question number to get the right callback
+    private int questionNumber = -1;
 
     // text components to edit easily
     private TextMeshProUGUI nameText;
     private TextMeshProUGUI sentenceText;
     private TextMeshProUGUI[] buttonsText;
-    //private TextMeshProUGUI button0Text;
-    //private TextMeshProUGUI button1Text;
-    //private TextMeshProUGUI button2Text;
-    //private TextMeshProUGUI button3Text;
 
     // UI GameObjects to easily enable/disable them
     private GameObject overlay;
     private GameObject actionTip;
     private GameObject[] buttons;
-    //private GameObject button0;
-    //private GameObject button1;
-    //private GameObject button2;
-    //private GameObject button3;
 
     // manually set these on Unity
     public GameObject dialogueBox;
@@ -37,6 +34,9 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        instance = this;
+
         sentences = new Queue<string>();
 
         if (dialogueBox == null) Debug.Log("component DialogueBox [UI] is missing");
@@ -110,6 +110,7 @@ public class DialogueManager : MonoBehaviour
 
     private void ResetInitialDialogue()
     {
+        questionNumber = -1;
         sentences.Clear();
         sentenceText.text = dialogue.initialSentence;
         actionTip.SetActive(true);
@@ -142,6 +143,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
+            dialogue.Callback(questionNumber);
             ResetInitialDialogue();
             return;
         }
@@ -153,6 +155,8 @@ public class DialogueManager : MonoBehaviour
 
     public void PrepareSentences(int button)
     {
+        questionNumber = button;
+
         string[] sent = dialogue.GetSentences(button);
 
         foreach (string s in sent)

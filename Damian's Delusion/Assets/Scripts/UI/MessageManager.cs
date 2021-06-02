@@ -40,15 +40,13 @@ public class MessageManager : MonoBehaviour
 
         for (int i = 0; i < messageSlots.Count; i++)
         {
-            Debug.Log(i);
+
             if (i >= queuedMessages.Count)
             {
-                Debug.Log("emppt");
                 messageSlots[i].SetText("");
             }
             else
             {
-                Debug.Log("set");
                 messageSlots[i].SetText(queuedMessages[i]);
 
             }
