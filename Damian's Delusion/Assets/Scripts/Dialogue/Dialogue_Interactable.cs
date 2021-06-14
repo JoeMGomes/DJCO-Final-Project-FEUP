@@ -8,10 +8,20 @@ public class Dialogue_Interactable : Interactable
     private DialogueManager manager;
     private string startString = "Press 'E' to start dialogue";
 
+    [FMODUnity.EventRef]
+    public string talkEvent = "";
+    FMOD.Studio.EventInstance talk;
+
     private void Awake()
     {
         manager = FindObjectOfType<DialogueManager>();
         if (manager == null) Debug.LogError("Dialogue Manager not found in Scene");
+
+        if (talkEvent != "")
+        {
+            talk = FMODUnity.RuntimeManager.CreateInstance(talkEvent);
+            FMODUnity.RuntimeManager.AttachInstanceToGameObject(talk, GetComponent<Transform>(), GetComponent<Rigidbody>());
+        }
     }
 
     override public void Interact()
@@ -19,6 +29,8 @@ public class Dialogue_Interactable : Interactable
         base.Interact();
         Destroy(HUDText_gameobject);
         manager.StartDialogue(dialogue);
+        if(talkEvent != "")
+            talk.start();
     }
 
     override public void OnFocus()
