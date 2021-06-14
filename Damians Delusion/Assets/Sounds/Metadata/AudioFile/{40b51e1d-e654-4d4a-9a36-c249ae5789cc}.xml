@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{40b51e1d-e654-4d4a-9a36-c249ae5789cc}">
+		<property name="assetPath">
+			<value>Ambient/Water_Dripping/dripping_water_floor.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.6803628117913831</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{1d6ddfab-fbfa-4bad-b87d-373300e45d00}</destination>
+		</relationship>
+	</object>
+</objects>

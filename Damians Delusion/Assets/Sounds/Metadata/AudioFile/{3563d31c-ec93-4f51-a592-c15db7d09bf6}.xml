@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{3563d31c-ec93-4f51-a592-c15db7d09bf6}">
+		<property name="assetPath">
+			<value>FX/Door/MetalDoorOpening.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.0930833333333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{1d6ddfab-fbfa-4bad-b87d-373300e45d00}</destination>
+		</relationship>
+	</object>
+</objects>

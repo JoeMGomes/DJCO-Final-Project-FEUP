@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{5536a74c-0d58-4202-9c54-c518f2c2fd5e}">
+		<property name="assetPath">
+			<value>Ambient/Water_Dripping/Water_Dripping_far.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>45.035102040816327</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{1d6ddfab-fbfa-4bad-b87d-373300e45d00}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{5b7bae73-3cff-441a-92a1-d7c025110567}">
+		<property name="assetPath">
+			<value>FX/CrazyPerson.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>12.70170068027211</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{1d6ddfab-fbfa-4bad-b87d-373300e45d00}</destination>
+		</relationship>
+	</object>
+</objects>

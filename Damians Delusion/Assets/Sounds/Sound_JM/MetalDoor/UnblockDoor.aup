@@ -1,0 +1,100 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="UnblockDoor_data" version="1.3.0" audacityversion="2.4.1" sel0="2.8774166700" sel1="4.7065416700" vpos="416" h="0.0000000000" zoom="59.5480456026" rate="48000.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="TITLE" value="UnblockDoor"/>
+		<tag name="major_brand" value="dash"/>
+		<tag name="Software" value="Lavf58.45.100"/>
+		<tag name="minor_version" value="0"/>
+		<tag name="compatible_brands" value="iso6mp41"/>
+		<tag name="creation_time" value="2015-02-28T10:33:43.000000Z"/>
+	</tags>
+	<wavetrack name="Opening" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="52468">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808224.au" len="52468" min="-0.796117" max="0.801094" rms="0.059245"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Opening" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="52468">
+				<waveblock start="0">
+					<simpleblockfile filename="e08087f1.au" len="52468" min="-0.796117" max="0.801094" rms="0.059245"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Russling" isSelected="1" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="2.87741667" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="74517">
+				<waveblock start="0">
+					<simpleblockfile filename="e08085b6.au" len="15441" min="-0.820494" max="0.812078" rms="0.11811"/>
+				</waveblock>
+				<waveblock start="15441">
+					<simpleblockfile filename="e08085dd.au" len="59076" min="-0.218707" max="0.113353" rms="0.025155"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Russling" isSelected="1" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="2.87741667" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="74517">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808fee.au" len="15441" min="-0.820494" max="0.812078" rms="0.11811"/>
+				</waveblock>
+				<waveblock start="15441">
+					<simpleblockfile filename="e0808cc8.au" len="59076" min="-0.219878" max="0.127053" rms="0.025765"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Russling" isSelected="1" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="3.15008334" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="51755">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808b0c.au" len="51755" min="-0.724593" max="0.814081" rms="0.135575"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Russling" isSelected="1" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="3.15008334" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="51755">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808640.au" len="51755" min="-0.810159" max="0.816316" rms="0.136801"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Closing" isSelected="1" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="3.15008334" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="74710">
+				<waveblock start="0">
+					<simpleblockfile filename="e08080c9.au" len="74710" min="-0.820372" max="0.805987" rms="0.062881"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Closing" isSelected="1" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="3.15008334" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="74710">
+				<waveblock start="0">
+					<simpleblockfile filename="e08080b1.au" len="74710" min="-0.820372" max="0.805987" rms="0.062881"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="forcibly-opening-locked-door-sound-effect" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="48000" gain="0.630957" pan="0.0" colorindex="0"/>
+	<wavetrack name="forcibly-opening-locked-door-sound-effect" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="48000" gain="0.630957" pan="0.0" colorindex="0"/>
+</project>
