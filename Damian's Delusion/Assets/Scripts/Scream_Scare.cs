@@ -6,22 +6,36 @@ public class Scream_Scare : Interactable
 {
 
     private string startString = "Press 'E' to start dialogue";
-
+    private string deadString = "";
+    [FMODUnity.EventRef]
+    public string screamEvent = "";
+    FMOD.Studio.EventInstance scream;
 
     private cameraLook playerCamera;
+    private bool isDead = false;
 
     private void Awake()
     {
         playerCamera = GameObject.Find("Player").GetComponentInChildren<cameraLook>();
         if (playerCamera == null)
             Debug.LogError("Cannot find player in scene.");
+
+        scream = FMODUnity.RuntimeManager.CreateInstance(screamEvent);
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(scream, GetComponent<Transform>(), GetComponent<Rigidbody>());
     }
 
     override public void Interact()
     {
         base.Interact();
         Destroy(HUDText_gameobject);
-        playerCamera.Shake(0.7f, 0.2f);
+        if (!isDead)
+        {
+            Destroy(HUDText_gameobject);
+            scream.start();
+            startString = deadString;
+            isDead = true;
+            playerCamera.Shake(0.9f, 0.01f);
+        }
     }
 
     override public void OnFocus()

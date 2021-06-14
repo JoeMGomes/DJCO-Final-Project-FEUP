@@ -243,11 +243,11 @@ MonoBehaviour:
   Path: Assets/Sounds/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637587650520000000
+  lastModified: 637591569800000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1790
+    Value: 2046
   Exists: 1
 --- !u!114 &-3820352453763076261
 MonoBehaviour:
@@ -272,6 +272,52 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &-3301398495636813578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Tile_Room_Footsteps/TileStep1
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Tile_Room_Footsteps/TileStep1
+  guid: 7a39e5fb988b5c419ea4864f6384c184
+  Banks:
+  - {fileID: 5583777828322658443}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 443
+--- !u!114 &-3219403811208076606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Tile_Room_Footsteps/TileStep3
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Tile_Room_Footsteps/TileStep3
+  guid: e26da5e7fa02074181e8d8013a8bc305
+  Banks:
+  - {fileID: 5583777828322658443}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 393
 --- !u!114 &-2233579297170159215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -448,13 +494,42 @@ MonoBehaviour:
   - {fileID: -7660641037323030086}
   - {fileID: -1598917277532812201}
   - {fileID: 587698852218865498}
+  - {fileID: 3303089990823415784}
+  - {fileID: 176885538888292669}
+  - {fileID: 8759168810636032076}
+  - {fileID: 5483839546963796488}
+  - {fileID: -3301398495636813578}
+  - {fileID: -3219403811208076606}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5583777828322658443}
   StringsBanks:
   - {fileID: -3861519131446045134}
-  stringsBankWriteTime: 637587650520000000
+  stringsBankWriteTime: 637591569800000000
   cacheVersion: 6
+--- !u!114 &176885538888292669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Scream
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Scream
+  guid: 1e69591c0c256c40a856117c01dce6e1
+  Banks:
+  - {fileID: 5583777828322658443}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5592
 --- !u!114 &587698852218865498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,6 +572,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &3303089990823415784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Tile_Room_Footsteps/TileStep4
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Tile_Room_Footsteps/TileStep4
+  guid: 011e1d883caec743860fa817aaf702d5
+  Banks:
+  - {fileID: 5583777828322658443}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 457
 --- !u!114 &3482561739863796424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -566,6 +664,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 10000
+--- !u!114 &5483839546963796488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Tile_Room_Footsteps/TileStep2
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Tile_Room_Footsteps/TileStep2
+  guid: 6b1ad7d9019ee84b96d571fbecf358e1
+  Banks:
+  - {fileID: 5583777828322658443}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 245
 --- !u!114 &5583777828322658443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -581,7 +702,7 @@ MonoBehaviour:
   Path: Assets/Sounds/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637587650540000000
+  lastModified: 637591569780000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -631,6 +752,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 497
+--- !u!114 &8759168810636032076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Drunk_NPC
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Drunk_NPC
+  guid: 4b737bbf920f9045baaf3f21092d58be
+  Banks:
+  - {fileID: 5583777828322658443}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1244
 --- !u!114 &9084369691975658542
 MonoBehaviour:
   m_ObjectHideFlags: 0

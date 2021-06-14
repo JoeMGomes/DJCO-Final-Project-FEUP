@@ -33200,6 +33200,7 @@ MonoBehaviour:
       - I dont know why you want to go there
       - But good luck *Sips wine* *Gives key*
     callback: {fileID: 564742524}
+  talkEvent: 
 --- !u!136 &564742520
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -33985,6 +33986,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8371ab831255b4f4aa62cf377e5ee04d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &749345657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749345653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambient/Empty_Room
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &749478327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39176,7 +39200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8978409642285412087, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.62
+      value: -0.35
       objectReference: {fileID: 0}
     - target: {fileID: 8978409642285412087, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
       propertyPath: m_LocalPosition.y
@@ -39184,7 +39208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8978409642285412087, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.2
+      value: 7.9
       objectReference: {fileID: 0}
     - target: {fileID: 8978409642285412087, guid: 2612dbefbaaef9346bdb0b9214908501, type: 3}
       propertyPath: m_LocalRotation.w
@@ -40384,6 +40408,7 @@ MonoBehaviour:
       sentences:
       - Oof *Dies painfully*
     callback: {fileID: 2140767027}
+  talkEvent: event:/FX/Gagged_NPC
 --- !u!136 &2140767023
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -40904,6 +40929,7 @@ MonoBehaviour:
   acquiredKnowledge:
     name: 
   player: {fileID: 1728853485}
+  bangScreamEvent: event:/FX/Crazy_Person_On_Cell
 --- !u!33 &2879823770660131182
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -41387,6 +41413,7 @@ MonoBehaviour:
   acquiredKnowledge:
     name: 
   player: {fileID: 0}
+  screamEvent: event:/FX/Scream
 --- !u!23 &4069445485162221356
 MeshRenderer:
   m_ObjectHideFlags: 0
