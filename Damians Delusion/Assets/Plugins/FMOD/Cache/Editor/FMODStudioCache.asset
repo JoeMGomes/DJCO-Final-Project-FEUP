@@ -1207,8 +1207,13 @@ MonoBehaviour:
   MasterBanks:
   - {fileID: -1960883838292297165}
   StringsBanks:
+<<<<<<< HEAD
   - {fileID: 3016824268341609180}
   stringsBankWriteTime: 637592576240000000
+=======
+  - {fileID: -3861519131446045134}
+  stringsBankWriteTime: 637594480412042461
+>>>>>>> main
   cacheVersion: 6
 --- !u!114 &33268106812067888
 MonoBehaviour:
