@@ -8,7 +8,7 @@ public class Scream_Scare : Interactable
     private string startString = "Press 'E' to start dialogue";
     private string deadString = "";
     [FMODUnity.EventRef]
-    public string screamEvent = "";
+    public string screamEvent = "event:/FX/Scream";
     FMOD.Studio.EventInstance scream;
 
     private cameraLook playerCamera;
