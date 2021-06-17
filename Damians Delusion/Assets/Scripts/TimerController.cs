@@ -13,12 +13,15 @@ public class TimerController : MonoBehaviour
     public playerMovement mov;
     public cameraLook cam;
     public GameObject gameOverUI;
+    public GameObject EndGameUI;
 
-    private float timeLeft;
+    public float timeLeft;
     private bool activeTimer;
     private bool dying = false;
     private Quaternion originalRotation;
     private Vignette vig;
+
+    public bool EndGame = false;
 
     Vector3 initPos;
 
@@ -34,7 +37,7 @@ public class TimerController : MonoBehaviour
         volume.profile.TryGetSettings(out vig);
         if (gameOverUI == null) Debug.LogError("game over ui object is missing in timer controller");
         gameOverUI.SetActive(false);
-
+        EndGameUI.SetActive(false);
         step = FMODUnity.RuntimeManager.CreateInstance(stepSoundEvent);
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(step, GetComponent<Transform>(), GetComponent<Rigidbody>());
     }
@@ -66,7 +69,7 @@ public class TimerController : MonoBehaviour
         activeTimer = false;
     }
 
-     public void StartTimer()
+    public void StartTimer()
     {
         activeTimer = true;
     }
@@ -86,7 +89,7 @@ public class TimerController : MonoBehaviour
         Debug.Log("" + result + " " + yPos + " " + zRot);
         cam.transform.position = new Vector3(cam.transform.position.x, yPos, cam.transform.position.z);
         Quaternion zQuat = Quaternion.AngleAxis(zRot, Vector3.forward);
-        cam.transform.localRotation = originalRotation * zQuat; 
+        cam.transform.localRotation = originalRotation * zQuat;
     }
 
     private void StartDying()
@@ -118,8 +121,14 @@ public class TimerController : MonoBehaviour
         yield return new WaitForSeconds(0.6f);
 
         step.start();
-
-        gameOverUI.SetActive(true);
+        if (!EndGame)
+        {
+            gameOverUI.SetActive(true);
+        }
+        else
+        {
+            EndGameUI.SetActive(true);
+        }
         // enable mouse
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
