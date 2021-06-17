@@ -10,10 +10,19 @@ public class playerMovement : MonoBehaviour
     public CharacterController controller;
 
     private Vector2 direction;
+    public GameObject pauseMenu;
 
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+
+            pauseMenu.SetActive(!pauseMenu.activeInHierarchy);
+
+        }
+
+
         if (Input.GetKey(KeyCode.W))
         {
             direction.y += 1f;
@@ -34,15 +43,18 @@ public class playerMovement : MonoBehaviour
 
 
 
-        if (direction.magnitude > 1){
+        if (direction.magnitude > 1)
+        {
             direction = direction.normalized;
         }
         Vector3 move;
 
-        if(controller.isGrounded){
+        if (controller.isGrounded)
+        {
             move = new Vector3(direction.x, 0, direction.y) * m_Speed * Time.deltaTime;
         }
-        else{
+        else
+        {
             move = new Vector3(direction.x, -gravity, direction.y) * m_Speed * Time.deltaTime;
         }
 
