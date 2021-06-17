@@ -136,16 +136,6 @@ public class TimerController : MonoBehaviour
         step.start();
     }
 
-    public void RestartLevel()
-    {
-        SceneManager.LoadScene(0);
-    }
-
-    public void MainMenu()
-    {
-        SceneManager.LoadScene(1);
-    }
-
     private float ExpoInterp(float start, float end, float value)
     {
         end -= start;
