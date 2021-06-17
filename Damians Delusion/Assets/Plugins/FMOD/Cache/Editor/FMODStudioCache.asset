@@ -385,6 +385,27 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5564
+--- !u!114 &-6742209832675555153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Sound/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637592576240000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2046
+  Exists: 1
 --- !u!114 &-6648458845951827194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1216,6 +1237,7 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 8793131424554018848}
   - {fileID: -9117332828774258363}
+  - {fileID: -6742209832675555153}
   EditorEvents:
   - {fileID: -957403027354346407}
   - {fileID: 116087266889292867}
@@ -1225,7 +1247,7 @@ MonoBehaviour:
   - {fileID: 8787162861537289128}
   - {fileID: -574793984240249872}
   - {fileID: -7705718227208966706}
-  - {fileID: 2440692275088856814}
+  - {fileID: 0}
   - {fileID: -219125133796945498}
   - {fileID: -8840293301501540312}
   - {fileID: -1406975820934248293}
@@ -1233,9 +1255,9 @@ MonoBehaviour:
   - {fileID: -7312843962141362854}
   - {fileID: 4044989974915187171}
   - {fileID: -8527611373620295003}
-  - {fileID: 601348125331981589}
+  - {fileID: 0}
   - {fileID: -379483073934501374}
-  - {fileID: 1652847148082433597}
+  - {fileID: 0}
   - {fileID: -6648458845951827194}
   - {fileID: 1493538270953279134}
   - {fileID: -7851960206780951908}
@@ -1248,9 +1270,11 @@ MonoBehaviour:
   EditorParameters: []
   MasterBanks:
   - {fileID: 5583777828322658443}
+  - {fileID: -9117332828774258363}
   StringsBanks:
   - {fileID: -3861519131446045134}
-  stringsBankWriteTime: 637592807918810749
+  - {fileID: -6742209832675555153}
+  stringsBankWriteTime: 637592576240000000
   cacheVersion: 6
 --- !u!114 &33268106812067888
 MonoBehaviour:
@@ -2092,7 +2116,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 2046
-  Exists: 1
+  Exists: 0
 --- !u!114 &9084369691975658542
 MonoBehaviour:
   m_ObjectHideFlags: 0
