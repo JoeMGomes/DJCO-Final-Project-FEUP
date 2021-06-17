@@ -5,9 +5,14 @@ using UnityEngine;
 public class Patient2 : IDialogueCallBack
 {
 
+    public PlayerKnowledge player;
+    public Knowledge untieKnowledge;
+
+    public Knowledge killKnowledge;
     public override IEnumerator CallBack_3()
     {
         MessageManager.instance.InsertMessage("You freed him");
+        player.AddKnowledge(untieKnowledge);
         DialogueManager.instance.EndDialogue();
         Destroy(GetComponent<Dialogue_Interactable>());
 
@@ -20,6 +25,7 @@ public class Patient2 : IDialogueCallBack
     public override IEnumerator CallBack_4()
     {
         MessageManager.instance.InsertMessage("You killed him...");
+        player.AddKnowledge(killKnowledge);
         DialogueManager.instance.EndDialogue();
 
         Destroy(GetComponent<Dialogue_Interactable>());
