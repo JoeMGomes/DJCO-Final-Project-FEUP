@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5479418017758621025}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 6804668311347438169}
   - component: {fileID: 7389055425598636487}
   - component: {fileID: 7874090943245840988}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
