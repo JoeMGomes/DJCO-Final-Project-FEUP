@@ -34,7 +34,7 @@ public class Scream_Scare : Interactable
             scream.start();
             startString = deadString;
             isDead = true;
-            playerCamera.Shake(0.9f, 0.01f);
+            playerCamera.Shake(0.9f, 0.02f);
         }
     }
 

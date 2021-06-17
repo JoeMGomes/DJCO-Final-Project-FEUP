@@ -85,8 +85,8 @@ public class cameraLook : MonoBehaviour
             rotAverageY = ClampAngle(rotAverageY, minimumY, maximumY);
             rotAverageX = ClampAngle(rotAverageX, minimumX, maximumX);
 
-            Quaternion yQuaternion = Quaternion.AngleAxis(rotAverageY + Mathf.Sin(bobbingTimer*10)*4, Vector3.left);
-            Quaternion xQuaternion = Quaternion.AngleAxis(rotAverageX + Mathf.Sin(bobbingTimer * 5) * 4, Vector3.up);
+            Quaternion yQuaternion = Quaternion.AngleAxis(rotAverageY + Mathf.Sin(bobbingTimer*10)*3, Vector3.left);
+            Quaternion xQuaternion = Quaternion.AngleAxis(rotAverageX + Mathf.Sin(bobbingTimer * 5) * 3, Vector3.up);
 
             transform.localRotation = originalRotation * yQuaternion;
             player.localRotation = originalRotationPlayer * xQuaternion;

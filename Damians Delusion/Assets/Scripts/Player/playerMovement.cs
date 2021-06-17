@@ -16,13 +16,13 @@ public class playerMovement : MonoBehaviour
     private cameraLook playerCam;
 
     [FMODUnity.EventRef]
-    public string step1Event = "";
+    public string step1Event = "event:/Player/Tile_Room_Footsteps/TileStep2";
     FMOD.Studio.EventInstance step1;
     [FMODUnity.EventRef]
-    public string step2Event = "";
+    public string step2Event = "event:/Player/Tile_Room_Footsteps/TileStep3";
     FMOD.Studio.EventInstance step2;
     [FMODUnity.EventRef]
-    public string step3Event = "";
+    public string step3Event = "event:/Player/Tile_Room_Footsteps/TileStep4";
     FMOD.Studio.EventInstance step3;
 
     private bool stepSound = false;
