@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -8896051167825165466, guid: 90fd6a93ba8b6914b8ffce761dffccde, type: 3}
+  - {fileID: 2100000, guid: 2bb503b1c49e1904c86c1fb5009d18cb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -116,6 +116,10 @@ MonoBehaviour:
   isOpen: 0
   unlock_Key: {fileID: 0}
   isLocked: 0
+  doorOpenEvent: event:/FX/Door/Metal_Door_Opening
+  doorCloseEvent: event:/FX/Door/Metal_Door_Cloosing
+  doorUnlockEvent: event:/FX/Door/Unblock_Door
+  doorRussleEvent: event:/FX/Door/Metal_Door_Russling
 --- !u!1 &5278846029351508764
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,7 +179,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -8896051167825165466, guid: 90fd6a93ba8b6914b8ffce761dffccde, type: 3}
+  - {fileID: 2100000, guid: 2bb503b1c49e1904c86c1fb5009d18cb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -308,7 +312,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -8896051167825165466, guid: 90fd6a93ba8b6914b8ffce761dffccde, type: 3}
+  - {fileID: 2100000, guid: 2bb503b1c49e1904c86c1fb5009d18cb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

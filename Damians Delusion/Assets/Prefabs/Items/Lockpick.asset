@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Lockpick
   icon: {fileID: 21300000, guid: 853ef64cd47c1844eb23f50a5ea95cfe, type: 3}
-  model: {fileID: 919132149155446097, guid: 7b8e342a6ab75134397d9a218ea40fac, type: 3}
+  model: {fileID: 4949539274674728668, guid: 0e6905382e609c04989580d7dcf58150, type: 3}
