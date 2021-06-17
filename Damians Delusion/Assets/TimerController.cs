@@ -81,7 +81,7 @@ public class TimerController : MonoBehaviour
     private void UpdateCamFalling()
     {
         float result = Mathf.InverseLerp(0f, -1f, timeLeft);
-        float yPos = ExpoInterp(initPos.y, 1f, result);
+        float yPos = ExpoInterp(initPos.y, -1.5f, result);
         float zRot = ExpoInterp(0f, 100f, result);
         Debug.Log("" + result + " " + yPos + " " + zRot);
         cam.transform.position = new Vector3(cam.transform.position.x, yPos, cam.transform.position.z);
@@ -97,6 +97,7 @@ public class TimerController : MonoBehaviour
         dying = true;
         originalRotation = cam.transform.localRotation;
         initPos = cam.transform.position;
+        Debug.Log(initPos.ToString());
     }
 
     private IEnumerator DeadStepSounds()
