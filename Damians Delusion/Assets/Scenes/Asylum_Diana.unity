@@ -10816,6 +10816,47 @@ Transform:
   m_Father: {fileID: 781128397}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2006277874 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4856092954034953985, guid: c41396cc3d4f98e4089b016bcdf692b2, type: 3}
+  m_PrefabInstance: {fileID: 1206231508}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2006277877
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006277874}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.91909, y: 15.684552, z: 8.951065}
+  m_Center: {x: 1.2192535, y: 1.0553746, z: -4.337036}
+--- !u!114 &2006277878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006277874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambient/Water_Dripping/Water_Dripping_Close
+  PlayEvent: 3
+  StopEvent: 4
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &2011221122
 PrefabInstance:
   m_ObjectHideFlags: 0
