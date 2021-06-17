@@ -8,19 +8,20 @@ using UnityEngine.SceneManagement;
 
 public class TimerController : MonoBehaviour
 {
-    public float timeLeft;
-    private float initialTimeLeft = 2;
+    public float initialTimeAvailable = 2;
+    public PostProcessVolume volume;
+    public playerMovement mov;
+    public cameraLook cam;
+    public GameObject gameOverUI;
+
+    private float timeLeft;
     private bool activeTimer;
     private bool dying = false;
     private Quaternion originalRotation;
     private Vignette vig;
-    public PostProcessVolume volume;
 
-    public playerMovement mov;
-    public cameraLook cam;
     Vector3 initPos;
 
-    public GameObject gameOverUI;
 
     [FMODUnity.EventRef]
     public string stepSoundEvent = "event:/Player/Tile_Room_Footsteps/TileStep4";
@@ -29,7 +30,7 @@ public class TimerController : MonoBehaviour
     void Start()
     {
         activeTimer = true;
-        timeLeft = initialTimeLeft;
+        timeLeft = initialTimeAvailable;
         volume.profile.TryGetSettings(out vig);
         if (gameOverUI == null) Debug.LogError("game over ui object is missing in timer controller");
         gameOverUI.SetActive(false);
@@ -57,7 +58,7 @@ public class TimerController : MonoBehaviour
     public void AddTime(float time)
     {
         timeLeft += time;
-        if (timeLeft > initialTimeLeft) initialTimeLeft = timeLeft;
+        if (timeLeft > initialTimeAvailable) initialTimeAvailable = timeLeft;
     }
 
     public void PauseTimer()
@@ -72,7 +73,7 @@ public class TimerController : MonoBehaviour
 
     private void UpdateVignette()
     {
-        float result = Mathf.InverseLerp(initialTimeLeft, 0f, timeLeft);
+        float result = Mathf.InverseLerp(initialTimeAvailable, 0f, timeLeft);
         float nextValue = Mathf.Lerp(0.45f, 1.0f, result);
         vig.intensity.value = nextValue;
     }
