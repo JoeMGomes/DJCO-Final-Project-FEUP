@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Asylum_Diana.unity
-    guid: 6dd3e6b25beafa040ad4c4417e85f0f7
-  - enabled: 1
     path: Assets/Scenes/menus.unity
     guid: ecface519ab6b124a89bb1d5ce25d480
+  - enabled: 1
+    path: Assets/Scenes/Asylum_Diana.unity
+    guid: 6dd3e6b25beafa040ad4c4417e85f0f7
   m_configObjects: {}
