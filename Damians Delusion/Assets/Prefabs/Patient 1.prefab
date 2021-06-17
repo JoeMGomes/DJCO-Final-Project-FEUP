@@ -86,8 +86,9 @@ MonoBehaviour:
       necessaryKnowledge:
         name: 
       sentences:
-      - " I dunno \xAF\\(\u30C4)/\xAF"
-      - ' I heard the guards saying something about a crazy fella but not much more...'
+      - ' I heard the guards saying something about a crazy fella...'
+      - I don't know much more but they probably gave you some meds to calm you down...
+      - You won't be awake for long...
     - question: Who are you?
       necessaryKnowledge:
         name: 
@@ -110,3 +111,4 @@ MonoBehaviour:
       - Ain't the first one telling me that... *Opens the door*
       - Whatever...
     callback: {fileID: 6621920536398834051}
+  talkEvent: 
