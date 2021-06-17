@@ -1,1031 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9189919557700625881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Pillow_Room_Footsteps/Step2
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Pillow_Room_Footsteps/Step2
-  guid: 1074f6825155c443b61122b2abb18ce1
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 706
---- !u!114 &-8962693322103574650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Pillow_Room_Footsteps/Step1
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Pillow_Room_Footsteps/Step1
-  guid: 53ff785a49744640a84f56ea48cb2849
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 572
---- !u!114 &-8893957421438249915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Door/Unblock_Door
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Door/Unblock_Door
-  guid: 93e9725423e2984c84971fb118d3209c
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1829
---- !u!114 &-8887437950357982122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Pillow_Room_Footsteps/Step4
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Pillow_Room_Footsteps/Step4
-  guid: b399ad31ccd36f40b93f314da88fd820
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 497
---- !u!114 &-8861463771752102555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Light
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Light
-  guid: ae565c551552264692cd8f7257a2c2c4
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5200
---- !u!114 &-8516801760300587974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Door/Metal_Door_Cloosing
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Door/Metal_Door_Cloosing
-  guid: 325c4d55ac70a94baf37eb7334a353a6
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1556
---- !u!114 &-8107427261362232876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Water_Dripping/Water_Dripping_Floor
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Water_Dripping/Water_Dripping_Floor
-  guid: d13bf66936496840b65e114b764a309e
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3680
---- !u!114 &-8036965006401538811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Menu/Music
-  m_EditorClassIdentifier: 
-  Path: event:/Menu/Music
-  guid: e8a4dae0c9f3fb43b8e5890209d09c61
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 34486
---- !u!114 &-7956811115535152626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Door/Metal_Door_Cloosing
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Door/Metal_Door_Cloosing
-  guid: 325c4d55ac70a94baf37eb7334a353a6
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1556
---- !u!114 &-7841767632174113239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Water_Dripping/Water_Dripping_Far
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Water_Dripping/Water_Dripping_Far
-  guid: dca2492346b92e48afa6623ac6c81432
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 11000
---- !u!114 &-7827280997783356262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Light
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Light
-  guid: ae565c551552264692cd8f7257a2c2c4
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5200
---- !u!114 &-7804983191836472937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Light_withON
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Light_withON
-  guid: d1fafc84ccf8d745b6afb13805bd8b00
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 6200
---- !u!114 &-7660641037323030086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Door/Metal_Door_Opening
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Door/Metal_Door_Opening
-  guid: e0b8444ae26f384998569d13009fad7a
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1093
---- !u!114 &-7501123883996880160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../Sound/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637551145120000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 744
-  Exists: 1
---- !u!114 &-7401960140581230171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Gagged_NPC
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Gagged_NPC
-  guid: 6d57f477fd2db1448c19cb55959e6d62
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1348
---- !u!114 &-6769524026302774543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Door/Unblock_Door
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Door/Unblock_Door
-  guid: 93e9725423e2984c84971fb118d3209c
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1829
---- !u!114 &-6731272391578706502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Pillow_Room_Footsteps/Step3
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Pillow_Room_Footsteps/Step3
-  guid: 0d54985daec6cc48a9897941f2ea3d99
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 641
---- !u!114 &-6450483177083101643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Breathing/Breathing_Heavy
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Breathing/Breathing_Heavy
-  guid: 16a440e317eb184c94ba16376c5c0e53
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5000
---- !u!114 &-6295635070894759200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Pillow_Room_Footsteps/Step4
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Pillow_Room_Footsteps/Step4
-  guid: b399ad31ccd36f40b93f314da88fd820
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 497
---- !u!114 &-6088345678653969044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Drunk_NPC
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Drunk_NPC
-  guid: 4b737bbf920f9045baaf3f21092d58be
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1244
---- !u!114 &-6075743312627552551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Water_Dripping/Water_Dripping_Sink
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Water_Dripping/Water_Dripping_Sink
-  guid: 9dace647feb8994da551d198d0169323
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 10000
---- !u!114 &-5834252697807101218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Door/Metal_Door_Russling
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Door/Metal_Door_Russling
-  guid: 5235c40cedc09649868f2194f9379c82
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2891
---- !u!114 &-5742654478473355057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Tile_Room_Footsteps/TileStep4
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Tile_Room_Footsteps/TileStep4
-  guid: 011e1d883caec743860fa817aaf702d5
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 457
---- !u!114 &-5671998174955277057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Background_Music
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Background_Music
-  guid: baac908b74d1224f9c44ac55aaeb1ec2
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 98194
---- !u!114 &-5619784672064757815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Menu/Music
-  m_EditorClassIdentifier: 
-  Path: event:/Menu/Music
-  guid: e8a4dae0c9f3fb43b8e5890209d09c61
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 34486
---- !u!114 &-5454018925921020154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Event1
-  m_EditorClassIdentifier: 
-  Path: event:/Event1
-  guid: 8824e4448d39f64dad754cfee12b3f25
-  Banks:
-  - {fileID: 1493876488728427977}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 15000
---- !u!114 &-4490995910413680025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Tile_Room_Footsteps/TileStep2
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Tile_Room_Footsteps/TileStep2
-  guid: 6b1ad7d9019ee84b96d571fbecf358e1
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 245
---- !u!114 &-4490949736937834749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Sounds/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637592719303024308
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 2046
-  Exists: 1
---- !u!114 &-4343862616128835888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Crazy_Person_On_Cell
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Crazy_Person_On_Cell
-  guid: 94c691cafceb244fabad71eaef9c3a5a
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 10000
---- !u!114 &-4041545978448650699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Sounds/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637592719303768311
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-3987882331057019640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Water_Dripping/Water_Dripping_Far
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Water_Dripping/Water_Dripping_Far
-  guid: dca2492346b92e48afa6623ac6c81432
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 11000
---- !u!114 &-3867147145005162254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Pillow_Room_Footsteps/Step3
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Pillow_Room_Footsteps/Step3
-  guid: 0d54985daec6cc48a9897941f2ea3d99
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 641
---- !u!114 &-3861519131446045134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Sounds/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637594480412042461
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 2046
-  Exists: 1
---- !u!114 &-3820352453763076261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Breathing/Breathing_Heavy
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Breathing/Breathing_Heavy
-  guid: 16a440e317eb184c94ba16376c5c0e53
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5000
---- !u!114 &-3685731355337629153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Blown_Fuse_Light
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Blown_Fuse_Light
-  guid: 3b9a67c462972c4983495f6635c7b9b0
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 9500
---- !u!114 &-3465925384706276214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Door/Metal_Door_Opening
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Door/Metal_Door_Opening
-  guid: e0b8444ae26f384998569d13009fad7a
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1093
---- !u!114 &-3301398495636813578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Tile_Room_Footsteps/TileStep1
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Tile_Room_Footsteps/TileStep1
-  guid: 7a39e5fb988b5c419ea4864f6384c184
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 443
---- !u!114 &-3219403811208076606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Tile_Room_Footsteps/TileStep3
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Tile_Room_Footsteps/TileStep3
-  guid: e26da5e7fa02074181e8d8013a8bc305
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 393
---- !u!114 &-3105618844250740677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Tile_Room_Footsteps/TileStep1
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Tile_Room_Footsteps/TileStep1
-  guid: 7a39e5fb988b5c419ea4864f6384c184
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 443
---- !u!114 &-2471503209541464022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Water_Dripping/Water_Dripping_Sink
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Water_Dripping/Water_Dripping_Sink
-  guid: 9dace647feb8994da551d198d0169323
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 10000
---- !u!114 &-2399179898801662252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Empty_Room
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Empty_Room
-  guid: f4126a806cef5b4d8fcfd6a275c577d8
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5000
---- !u!114 &-2354318331629545767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Light
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Light
-  guid: ae565c551552264692cd8f7257a2c2c4
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5200
---- !u!114 &-2233579297170159215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Blown_Fuse_Light
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Blown_Fuse_Light
-  guid: 3b9a67c462972c4983495f6635c7b9b0
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 9500
---- !u!114 &-1992841634614953997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Water_Dripping/Water_Dripping_Far
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Water_Dripping/Water_Dripping_Far
-  guid: dca2492346b92e48afa6623ac6c81432
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 11000
---- !u!114 &-1980838305247100146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Light_withON
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Light_withON
-  guid: d1fafc84ccf8d745b6afb13805bd8b00
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 6200
---- !u!114 &-1960883838292297165
+--- !u!114 &-8397578463288643679
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1044,7 +19,7 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
---- !u!114 &-1598917277532812201
+--- !u!114 &-7046813140219377286
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1054,66 +29,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Menu/Music
+  m_Name: event:/Player/Pillow_Room_Footsteps/Step1
   m_EditorClassIdentifier: 
-  Path: event:/Menu/Music
-  guid: e8a4dae0c9f3fb43b8e5890209d09c61
+  Path: event:/Player/Pillow_Room_Footsteps/Step1
+  guid: 53ff785a49744640a84f56ea48cb2849
   Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 34486
---- !u!114 &-1231345249993192962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Background_Music
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Background_Music
-  guid: baac908b74d1224f9c44ac55aaeb1ec2
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 98194
---- !u!114 &-1061211552890782905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Scream
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Scream
-  guid: 1e69591c0c256c40a856117c01dce6e1
-  Banks:
-  - {fileID: -4041545978448650699}
+  - {fileID: -8397578463288643679}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 5592
---- !u!114 &-910361708117298373
+  Length: 572
+--- !u!114 &-6471170357522846316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1123,20 +52,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Breathing/Breathing_Normal
+  m_Name: event:/Ambient/Light
   m_EditorClassIdentifier: 
-  Path: event:/Player/Breathing/Breathing_Normal
-  guid: bb8cebe93949394689c853206d9c877f
+  Path: event:/Ambient/Light
+  guid: ae565c551552264692cd8f7257a2c2c4
   Banks:
-  - {fileID: 5583777828322658443}
+  - {fileID: -8397578463288643679}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 9000
---- !u!114 &-190730102447356821
+  Length: 5200
+--- !u!114 &-6214426165425650141
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1146,329 +75,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Empty_Room
+  m_Name: event:/Player/Pillow_Room_Footsteps/Step4
   m_EditorClassIdentifier: 
-  Path: event:/Ambient/Empty_Room
-  guid: f4126a806cef5b4d8fcfd6a275c577d8
+  Path: event:/Player/Pillow_Room_Footsteps/Step4
+  guid: b399ad31ccd36f40b93f314da88fd820
   Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4800
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 3016824268341609180}
-  - {fileID: -1960883838292297165}
-  EditorEvents:
-  - {fileID: 1422932300888259292}
-  - {fileID: -6731272391578706502}
-  - {fileID: -9189919557700625881}
-  - {fileID: -6450483177083101643}
-  - {fileID: 2802535114279946531}
-  - {fileID: 3616370756199138458}
-  - {fileID: -3685731355337629153}
-  - {fileID: -6088345678653969044}
-  - {fileID: 4244054386033000323}
-  - {fileID: 8238042897284011174}
-  - {fileID: -4490995910413680025}
-  - {fileID: 4124368786896930170}
-  - {fileID: 6850088436833200437}
-  - {fileID: 716747193696900949}
-  - {fileID: -6769524026302774543}
-  - {fileID: -4343862616128835888}
-  - {fileID: -2471503209541464022}
-  - {fileID: -8861463771752102555}
-  - {fileID: -6295635070894759200}
-  - {fileID: 4926975568826384650}
-  - {fileID: 85361894892007807}
-  - {fileID: -8107427261362232876}
-  - {fileID: -7804983191836472937}
-  - {fileID: -3987882331057019640}
-  - {fileID: -3465925384706276214}
-  - {fileID: 8750054198373753878}
-  - {fileID: -8036965006401538811}
-  - {fileID: -190730102447356821}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -1960883838292297165}
-  StringsBanks:
-<<<<<<< HEAD
-  - {fileID: 3016824268341609180}
-  stringsBankWriteTime: 637592576240000000
-=======
-  - {fileID: -3861519131446045134}
-  stringsBankWriteTime: 637594480412042461
->>>>>>> main
-  cacheVersion: 6
---- !u!114 &33268106812067888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Door/Unblock_Door
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Door/Unblock_Door
-  guid: 93e9725423e2984c84971fb118d3209c
-  Banks:
-  - {fileID: -4041545978448650699}
+  - {fileID: -8397578463288643679}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1829
---- !u!114 &85361894892007807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Breathing/Breathing_Normal
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Breathing/Breathing_Normal
-  guid: bb8cebe93949394689c853206d9c877f
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 9000
---- !u!114 &176885538888292669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Scream
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Scream
-  guid: 1e69591c0c256c40a856117c01dce6e1
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 5592
---- !u!114 &384903063746880911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Blown_Fuse_Light
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Blown_Fuse_Light
-  guid: 3b9a67c462972c4983495f6635c7b9b0
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 9500
---- !u!114 &587698852218865498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Empty_Room
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Empty_Room
-  guid: f4126a806cef5b4d8fcfd6a275c577d8
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4800
---- !u!114 &703929086669569589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Breathing/Breathing_Heavy
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Breathing/Breathing_Heavy
-  guid: 16a440e317eb184c94ba16376c5c0e53
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5000
---- !u!114 &714509152645114631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Water_Dripping/Water_Dripping_Close
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Water_Dripping/Water_Dripping_Close
-  guid: 880cab1d00029a43b9094376ff4ecd1f
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5564
---- !u!114 &716747193696900949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Water_Dripping/Water_Dripping_Close
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Water_Dripping/Water_Dripping_Close
-  guid: 880cab1d00029a43b9094376ff4ecd1f
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5564
---- !u!114 &1124072090572834311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Crazy_Person_On_Cell
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Crazy_Person_On_Cell
-  guid: 94c691cafceb244fabad71eaef9c3a5a
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 10000
---- !u!114 &1190366585948785118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Water_Dripping/Water_Dripping_Sink
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Water_Dripping/Water_Dripping_Sink
-  guid: 9dace647feb8994da551d198d0169323
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 10000
---- !u!114 &1309264750112164735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Water_Dripping/Water_Dripping_Floor
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Water_Dripping/Water_Dripping_Floor
-  guid: d13bf66936496840b65e114b764a309e
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3680
---- !u!114 &1422932300888259292
+  Length: 497
+--- !u!114 &-4033849037659735093
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1483,7 +103,7 @@ MonoBehaviour:
   Path: event:/Player/Tile_Room_Footsteps/TileStep4
   guid: 011e1d883caec743860fa817aaf702d5
   Banks:
-  - {fileID: 4758356139836740002}
+  - {fileID: -8397578463288643679}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1491,7 +111,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 457
---- !u!114 &1493876488728427977
+--- !u!114 &-3800199858117057970
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1500,17 +120,256 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambient/Water_Dripping/Water_Dripping_Far
   m_EditorClassIdentifier: 
-  Path: ../Sound/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637551145120000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &3016824268341609180
+  Path: event:/Ambient/Water_Dripping/Water_Dripping_Far
+  guid: dca2492346b92e48afa6623ac6c81432
+  Banks:
+  - {fileID: -8397578463288643679}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11000
+--- !u!114 &-3753500794407969620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Pillow_Room_Footsteps/Step2
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Pillow_Room_Footsteps/Step2
+  guid: 1074f6825155c443b61122b2abb18ce1
+  Banks:
+  - {fileID: -8397578463288643679}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 706
+--- !u!114 &-2136903700589395853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Tile_Room_Footsteps/TileStep3
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Tile_Room_Footsteps/TileStep3
+  guid: e26da5e7fa02074181e8d8013a8bc305
+  Banks:
+  - {fileID: -8397578463288643679}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 393
+--- !u!114 &-1569672164920191810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Gagged_NPC
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Gagged_NPC
+  guid: 6d57f477fd2db1448c19cb55959e6d62
+  Banks:
+  - {fileID: -8397578463288643679}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1348
+--- !u!114 &-1389248093407972885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambient/Background_Music
+  m_EditorClassIdentifier: 
+  Path: event:/Ambient/Background_Music
+  guid: baac908b74d1224f9c44ac55aaeb1ec2
+  Banks:
+  - {fileID: -8397578463288643679}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 98194
+--- !u!114 &-1244783923265289824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Breathing/Breathing_Normal
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Breathing/Breathing_Normal
+  guid: bb8cebe93949394689c853206d9c877f
+  Banks:
+  - {fileID: -8397578463288643679}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9000
+--- !u!114 &-874839956588482224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Breathing/Breathing_Heavy
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Breathing/Breathing_Heavy
+  guid: 16a440e317eb184c94ba16376c5c0e53
+  Banks:
+  - {fileID: -8397578463288643679}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &-143125462364204842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Blown_Fuse_Light
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Blown_Fuse_Light
+  guid: 3b9a67c462972c4983495f6635c7b9b0
+  Banks:
+  - {fileID: -8397578463288643679}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9500
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 1731462951560503751}
+  - {fileID: -8397578463288643679}
+  EditorEvents:
+  - {fileID: -4033849037659735093}
+  - {fileID: 3446487554742626561}
+  - {fileID: -3753500794407969620}
+  - {fileID: -874839956588482224}
+  - {fileID: 3170032466721786820}
+  - {fileID: 4733326343962397007}
+  - {fileID: -143125462364204842}
+  - {fileID: 6917292904661007913}
+  - {fileID: 4325021236420193854}
+  - {fileID: -7046813140219377286}
+  - {fileID: 5477246135381442855}
+  - {fileID: -1569672164920191810}
+  - {fileID: 5305142367532744049}
+  - {fileID: 6071936036421652184}
+  - {fileID: 2468471732017694781}
+  - {fileID: 2858275775515151933}
+  - {fileID: 3178321709316711711}
+  - {fileID: -6471170357522846316}
+  - {fileID: -6214426165425650141}
+  - {fileID: -1389248093407972885}
+  - {fileID: -1244783923265289824}
+  - {fileID: 4908791913550577991}
+  - {fileID: 1576147063222001296}
+  - {fileID: -3800199858117057970}
+  - {fileID: 2175240071080124828}
+  - {fileID: -2136903700589395853}
+  - {fileID: 6970677890882017468}
+  - {fileID: 7734492075480205124}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -8397578463288643679}
+  StringsBanks:
+  - {fileID: 1731462951560503751}
+  stringsBankWriteTime: 637592576240000000
+  cacheVersion: 6
+--- !u!114 &1576147063222001296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambient/Light_withON
+  m_EditorClassIdentifier: 
+  Path: event:/Ambient/Light_withON
+  guid: d1fafc84ccf8d745b6afb13805bd8b00
+  Banks:
+  - {fileID: -8397578463288643679}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6200
+--- !u!114 &1731462951560503751
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1531,344 +390,7 @@ MonoBehaviour:
   - Name: Desktop
     Value: 2046
   Exists: 1
---- !u!114 &3303089990823415784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Tile_Room_Footsteps/TileStep4
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Tile_Room_Footsteps/TileStep4
-  guid: 011e1d883caec743860fa817aaf702d5
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 457
---- !u!114 &3482561739863796424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Gagged_NPC
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Gagged_NPC
-  guid: 6d57f477fd2db1448c19cb55959e6d62
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1348
---- !u!114 &3616370756199138458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Door/Metal_Door_Cloosing
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Door/Metal_Door_Cloosing
-  guid: 325c4d55ac70a94baf37eb7334a353a6
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1556
---- !u!114 &3708181604494351269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Pillow_Room_Footsteps/Step2
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Pillow_Room_Footsteps/Step2
-  guid: 1074f6825155c443b61122b2abb18ce1
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 706
---- !u!114 &3929602701739245245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Pillow_Room_Footsteps/Step2
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Pillow_Room_Footsteps/Step2
-  guid: 1074f6825155c443b61122b2abb18ce1
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 706
---- !u!114 &4117791054991018652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Crazy_Person_On_Cell
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Crazy_Person_On_Cell
-  guid: 94c691cafceb244fabad71eaef9c3a5a
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 10000
---- !u!114 &4124368786896930170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Gagged_NPC
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Gagged_NPC
-  guid: 6d57f477fd2db1448c19cb55959e6d62
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1348
---- !u!114 &4211789557250080619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Tile_Room_Footsteps/TileStep3
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Tile_Room_Footsteps/TileStep3
-  guid: e26da5e7fa02074181e8d8013a8bc305
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 393
---- !u!114 &4244054386033000323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Door/Metal_Door_Russling
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Door/Metal_Door_Russling
-  guid: 5235c40cedc09649868f2194f9379c82
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2891
---- !u!114 &4758356139836740002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Sound/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637592576260000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &4926975568826384650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Background_Music
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Background_Music
-  guid: baac908b74d1224f9c44ac55aaeb1ec2
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 98194
---- !u!114 &5026779223094484327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Pillow_Room_Footsteps/Step3
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Pillow_Room_Footsteps/Step3
-  guid: 0d54985daec6cc48a9897941f2ea3d99
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 641
---- !u!114 &5483839546963796488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Tile_Room_Footsteps/TileStep2
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Tile_Room_Footsteps/TileStep2
-  guid: 6b1ad7d9019ee84b96d571fbecf358e1
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 245
---- !u!114 &5583777828322658443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Sounds/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637594480412012272
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &6055491293600229142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Breathing/Breathing_Normal
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Breathing/Breathing_Normal
-  guid: bb8cebe93949394689c853206d9c877f
-  Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 9000
---- !u!114 &6380689417437672359
+--- !u!114 &2175240071080124828
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1883,7 +405,7 @@ MonoBehaviour:
   Path: event:/FX/Door/Metal_Door_Opening
   guid: e0b8444ae26f384998569d13009fad7a
   Banks:
-  - {fileID: -4041545978448650699}
+  - {fileID: -8397578463288643679}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1891,7 +413,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1093
---- !u!114 &6636141299055420222
+--- !u!114 &2468471732017694781
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1901,20 +423,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Tile_Room_Footsteps/TileStep2
+  m_Name: event:/FX/Door/Unblock_Door
   m_EditorClassIdentifier: 
-  Path: event:/Player/Tile_Room_Footsteps/TileStep2
-  guid: 6b1ad7d9019ee84b96d571fbecf358e1
+  Path: event:/FX/Door/Unblock_Door
+  guid: 93e9725423e2984c84971fb118d3209c
   Banks:
-  - {fileID: -4041545978448650699}
+  - {fileID: -8397578463288643679}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 245
---- !u!114 &6776313331117591506
+  Length: 1829
+--- !u!114 &2858275775515151933
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1924,20 +446,43 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Drunk_NPC
+  m_Name: event:/FX/Crazy_Person_On_Cell
   m_EditorClassIdentifier: 
-  Path: event:/FX/Drunk_NPC
-  guid: 4b737bbf920f9045baaf3f21092d58be
+  Path: event:/FX/Crazy_Person_On_Cell
+  guid: 94c691cafceb244fabad71eaef9c3a5a
   Banks:
-  - {fileID: -4041545978448650699}
+  - {fileID: -8397578463288643679}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10000
+--- !u!114 &3170032466721786820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Scream
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Scream
+  guid: 1e69591c0c256c40a856117c01dce6e1
+  Banks:
+  - {fileID: -8397578463288643679}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1244
---- !u!114 &6838133193677324097
+  Length: 5592
+--- !u!114 &3178321709316711711
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1947,66 +492,43 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Pillow_Room_Footsteps/Step1
+  m_Name: event:/Ambient/Water_Dripping/Water_Dripping_Sink
   m_EditorClassIdentifier: 
-  Path: event:/Player/Pillow_Room_Footsteps/Step1
-  guid: 53ff785a49744640a84f56ea48cb2849
+  Path: event:/Ambient/Water_Dripping/Water_Dripping_Sink
+  guid: 9dace647feb8994da551d198d0169323
   Banks:
-  - {fileID: -4041545978448650699}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 572
---- !u!114 &6850088436833200437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Tile_Room_Footsteps/TileStep1
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Tile_Room_Footsteps/TileStep1
-  guid: 7a39e5fb988b5c419ea4864f6384c184
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 443
---- !u!114 &6933212699688410533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Light_withON
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Light_withON
-  guid: d1fafc84ccf8d745b6afb13805bd8b00
-  Banks:
-  - {fileID: -4041545978448650699}
+  - {fileID: -8397578463288643679}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 6200
---- !u!114 &7319840132744948798
+  Length: 10000
+--- !u!114 &3446487554742626561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Pillow_Room_Footsteps/Step3
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Pillow_Room_Footsteps/Step3
+  guid: 0d54985daec6cc48a9897941f2ea3d99
+  Banks:
+  - {fileID: -8397578463288643679}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 641
+--- !u!114 &4325021236420193854
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2021,7 +543,7 @@ MonoBehaviour:
   Path: event:/FX/Door/Metal_Door_Russling
   guid: 5235c40cedc09649868f2194f9379c82
   Banks:
-  - {fileID: -4041545978448650699}
+  - {fileID: -8397578463288643679}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2029,7 +551,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2891
---- !u!114 &7584006028434418483
+--- !u!114 &4733326343962397007
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2039,112 +561,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Water_Dripping/Water_Dripping_Close
+  m_Name: event:/FX/Door/Metal_Door_Cloosing
   m_EditorClassIdentifier: 
-  Path: event:/Ambient/Water_Dripping/Water_Dripping_Close
-  guid: 880cab1d00029a43b9094376ff4ecd1f
+  Path: event:/FX/Door/Metal_Door_Cloosing
+  guid: 325c4d55ac70a94baf37eb7334a353a6
   Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5564
---- !u!114 &8136904576012573935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Pillow_Room_Footsteps/Step4
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Pillow_Room_Footsteps/Step4
-  guid: b399ad31ccd36f40b93f314da88fd820
-  Banks:
-  - {fileID: -1960883838292297165}
+  - {fileID: -8397578463288643679}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 497
---- !u!114 &8238042897284011174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Pillow_Room_Footsteps/Step1
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Pillow_Room_Footsteps/Step1
-  guid: 53ff785a49744640a84f56ea48cb2849
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 572
---- !u!114 &8750054198373753878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Tile_Room_Footsteps/TileStep3
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Tile_Room_Footsteps/TileStep3
-  guid: e26da5e7fa02074181e8d8013a8bc305
-  Banks:
-  - {fileID: 4758356139836740002}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 393
---- !u!114 &8759168810636032076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FX/Drunk_NPC
-  m_EditorClassIdentifier: 
-  Path: event:/FX/Drunk_NPC
-  guid: 4b737bbf920f9045baaf3f21092d58be
-  Banks:
-  - {fileID: -1960883838292297165}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1244
---- !u!114 &9084369691975658542
+  Length: 1556
+--- !u!114 &4908791913550577991
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2159,7 +589,7 @@ MonoBehaviour:
   Path: event:/Ambient/Water_Dripping/Water_Dripping_Floor
   guid: d13bf66936496840b65e114b764a309e
   Banks:
-  - {fileID: -1960883838292297165}
+  - {fileID: -8397578463288643679}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2167,3 +597,141 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3680
+--- !u!114 &5305142367532744049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Tile_Room_Footsteps/TileStep1
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Tile_Room_Footsteps/TileStep1
+  guid: 7a39e5fb988b5c419ea4864f6384c184
+  Banks:
+  - {fileID: -8397578463288643679}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 443
+--- !u!114 &5477246135381442855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Tile_Room_Footsteps/TileStep2
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Tile_Room_Footsteps/TileStep2
+  guid: 6b1ad7d9019ee84b96d571fbecf358e1
+  Banks:
+  - {fileID: -8397578463288643679}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 245
+--- !u!114 &6071936036421652184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambient/Water_Dripping/Water_Dripping_Close
+  m_EditorClassIdentifier: 
+  Path: event:/Ambient/Water_Dripping/Water_Dripping_Close
+  guid: 880cab1d00029a43b9094376ff4ecd1f
+  Banks:
+  - {fileID: -8397578463288643679}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5564
+--- !u!114 &6917292904661007913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Drunk_NPC
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Drunk_NPC
+  guid: 4b737bbf920f9045baaf3f21092d58be
+  Banks:
+  - {fileID: -8397578463288643679}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1244
+--- !u!114 &6970677890882017468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Menu/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Menu/Music
+  guid: e8a4dae0c9f3fb43b8e5890209d09c61
+  Banks:
+  - {fileID: -8397578463288643679}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 34486
+--- !u!114 &7734492075480205124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambient/Empty_Room
+  m_EditorClassIdentifier: 
+  Path: event:/Ambient/Empty_Room
+  guid: f4126a806cef5b4d8fcfd6a275c577d8
+  Banks:
+  - {fileID: -8397578463288643679}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4800
