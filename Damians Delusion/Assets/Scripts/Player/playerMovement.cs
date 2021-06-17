@@ -97,7 +97,6 @@ public class playerMovement : MonoBehaviour
                     step1.getPlaybackState(out FMOD.Studio.PLAYBACK_STATE state);
                     if (state == FMOD.Studio.PLAYBACK_STATE.STOPPED)
                     {
-                        Debug.Log("1");
                         step2.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                         step3.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                         step1.start();
@@ -110,7 +109,6 @@ public class playerMovement : MonoBehaviour
                     step2.getPlaybackState(out FMOD.Studio.PLAYBACK_STATE state);
                     if (state == FMOD.Studio.PLAYBACK_STATE.STOPPED)
                     {
-                        Debug.Log("2");
                         step1.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                         step3.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                         step2.start();
@@ -122,7 +120,6 @@ public class playerMovement : MonoBehaviour
                     step3.getPlaybackState(out FMOD.Studio.PLAYBACK_STATE state);
                     if (state == FMOD.Studio.PLAYBACK_STATE.STOPPED)
                     {
-                        Debug.Log("3");
                         step2.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                         step1.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                         step3.start();
