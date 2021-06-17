@@ -8,7 +8,7 @@ public class Door_Bang_Scream : Interactable
     private string doorString = "Press 'E' to open";
     private string deadString = "";
     [FMODUnity.EventRef]
-    public string bangScreamEvent = "";
+    public string bangScreamEvent = "event:/FX/Crazy_Person_On_Cell";
     FMOD.Studio.EventInstance bangScream;
 
     private cameraLook playerCamera;
