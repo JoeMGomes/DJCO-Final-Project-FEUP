@@ -84,4 +84,8 @@ $RECYCLE.BIN/
 *.lnk
 
 Sound/
-Damian's Delusion/Assets/Sounds/.cache/
+Damians Delusion/Assets/Sounds/.cache/
+Damians Delusion/Assets/Materials/textures/**
+Damians Delusion/Assets/Materials/Materials/
+
+Damians Delusion/Assets/Materials/textures.meta

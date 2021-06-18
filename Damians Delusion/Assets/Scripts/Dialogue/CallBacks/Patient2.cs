@@ -9,6 +9,18 @@ public class Patient2 : IDialogueCallBack
     public Knowledge untieKnowledge;
 
     public Knowledge killKnowledge;
+
+
+    [FMODUnity.EventRef]
+    public string thunderEvent = "event:/Player/Tile_Room_Footsteps/TileStep4";
+    FMOD.Studio.EventInstance thunder;
+
+    void Start()
+    {
+        thunder = FMODUnity.RuntimeManager.CreateInstance(thunderEvent);
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(thunder, GetComponent<Transform>(), GetComponent<Rigidbody>());
+    }
+
     public override IEnumerator CallBack_3()
     {
         MessageManager.instance.InsertMessage("You freed him");
@@ -29,6 +41,7 @@ public class Patient2 : IDialogueCallBack
         DialogueManager.instance.EndDialogue();
 
         Destroy(GetComponent<Dialogue_Interactable>());
+        thunder.start();
 
         //INSERT CODE FOR DYING
 

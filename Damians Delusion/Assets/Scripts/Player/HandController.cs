@@ -15,7 +15,7 @@ public class HandController : MonoBehaviour
         }else{
             Item = Instantiate(newModel, new Vector3(0, 0, 10), Quaternion.identity) as GameObject;
         }
-        GameObject child = transform.Find("Item").gameObject;
+        GameObject child = transform.Find("Main Camera/Item").gameObject;
         Item.transform.position = child.transform.position;
         Item.transform.rotation = child.transform.rotation;
         Item.transform.parent = child.transform.parent;
